@@ -4,12 +4,11 @@ public class Letras : MonoBehaviour
 {
     public AudioClip SomdaLetra;
     private AudioControl AC;
-    private Rigidbody2D rb;
+    public string Nome_Letra;
 
     private void Start()
     {
         AC = FindAnyObjectByType<AudioControl>();
-        rb = GetComponent<Rigidbody2D>();
     }
 
     private void OnMouseDown()
