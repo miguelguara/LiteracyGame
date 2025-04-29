@@ -1,0 +1,1 @@
+C:\Users\Instrutor\Desktop\Repositorio\LiteracyGame\Brothers\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\cxx\RelWithDebInfo\2t6f5d2e\obj\arm64-v8a

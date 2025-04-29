@@ -1,0 +1,8 @@
+C:/Users/Instrutor/Desktop/Repositorio/LiteracyGame/Brothers/.utmp/RelWithDebInfo/2t6f5d2e/arm64-v8a/CMakeFiles/edit_cache.dir
+C:/Users/Instrutor/Desktop/Repositorio/LiteracyGame/Brothers/.utmp/RelWithDebInfo/2t6f5d2e/arm64-v8a/CMakeFiles/rebuild_cache.dir
+C:/Users/Instrutor/Desktop/Repositorio/LiteracyGame/Brothers/.utmp/RelWithDebInfo/2t6f5d2e/arm64-v8a/GameActivity/CMakeFiles/game.dir
+C:/Users/Instrutor/Desktop/Repositorio/LiteracyGame/Brothers/.utmp/RelWithDebInfo/2t6f5d2e/arm64-v8a/GameActivity/CMakeFiles/edit_cache.dir
+C:/Users/Instrutor/Desktop/Repositorio/LiteracyGame/Brothers/.utmp/RelWithDebInfo/2t6f5d2e/arm64-v8a/GameActivity/CMakeFiles/rebuild_cache.dir
+C:/Users/Instrutor/Desktop/Repositorio/LiteracyGame/Brothers/.utmp/RelWithDebInfo/2t6f5d2e/arm64-v8a/FramePacing/CMakeFiles/swappywrapper.dir
+C:/Users/Instrutor/Desktop/Repositorio/LiteracyGame/Brothers/.utmp/RelWithDebInfo/2t6f5d2e/arm64-v8a/FramePacing/CMakeFiles/edit_cache.dir
+C:/Users/Instrutor/Desktop/Repositorio/LiteracyGame/Brothers/.utmp/RelWithDebInfo/2t6f5d2e/arm64-v8a/FramePacing/CMakeFiles/rebuild_cache.dir
