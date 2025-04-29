@@ -1,0 +1,819 @@
+fileFormatVersion: 2
+guid: 7ac5c836e89f5084a80c3393fb7a6b8c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8489948274006799204
+    second: Alfabeto_0
+  - first:
+      213: -2052528644791023063
+    second: Alfabeto_1
+  - first:
+      213: 7634443294820324928
+    second: Alfabeto_2
+  - first:
+      213: 7047342657171972634
+    second: Alfabeto_3
+  - first:
+      213: -3066036921043931745
+    second: Alfabeto_4
+  - first:
+      213: 6576021853318849631
+    second: Alfabeto_5
+  - first:
+      213: -655658134429399463
+    second: Alfabeto_6
+  - first:
+      213: 6922402747728203404
+    second: Alfabeto_7
+  - first:
+      213: 7982664053483930025
+    second: Alfabeto_8
+  - first:
+      213: 1076989395201330542
+    second: Alfabeto_9
+  - first:
+      213: -8115151078002707605
+    second: Alfabeto_10
+  - first:
+      213: -6778210498022909033
+    second: Alfabeto_11
+  - first:
+      213: 1678688375014986590
+    second: Alfabeto_12
+  - first:
+      213: 3828963961777731137
+    second: Alfabeto_13
+  - first:
+      213: -1390022799997816733
+    second: Alfabeto_14
+  - first:
+      213: -7752411102197727949
+    second: Alfabeto_15
+  - first:
+      213: 582475214835079033
+    second: Alfabeto_16
+  - first:
+      213: -5117629892304543104
+    second: Alfabeto_17
+  - first:
+      213: 5385467357206453614
+    second: Alfabeto_18
+  - first:
+      213: 4475042752830266746
+    second: Alfabeto_19
+  - first:
+      213: -8206462365485136536
+    second: Alfabeto_20
+  - first:
+      213: 8869557429465267918
+    second: Alfabeto_21
+  - first:
+      213: -256078351214118027
+    second: Alfabeto_22
+  - first:
+      213: 4822276253596093303
+    second: Alfabeto_23
+  - first:
+      213: 4892642054832874942
+    second: Alfabeto_24
+  - first:
+      213: 3619160058117717063
+    second: Alfabeto_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Alfabeto_0
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 2042
+        width: 331
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9c4266c605ad2a80800000000000000
+      internalID: -8489948274006799204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alfabeto_1
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 2037
+        width: 307
+        height: 343
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92acae38214f383e0800000000000000
+      internalID: -2052528644791023063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alfabeto_2
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 2040
+        width: 310
+        height: 343
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 046d0a54abdf2f960800000000000000
+      internalID: 7634443294820324928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alfabeto_3
+      rect:
+        serializedVersion: 2
+        x: 1349
+        y: 2041
+        width: 340
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a12613beec03dc160800000000000000
+      internalID: 7047342657171972634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alfabeto_4
+      rect:
+        serializedVersion: 2
+        x: 1753
+        y: 2042
+        width: 313
+        height: 339
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9da1f43aaf3375d0800000000000000
+      internalID: -3066036921043931745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alfabeto_5
+      rect:
+        serializedVersion: 2
+        x: 2170
+        y: 2042
+        width: 312
+        height: 339
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f54a64ac809b24b50800000000000000
+      internalID: 6576021853318849631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alfabeto_6
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 1454
+        width: 320
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9568d3b8662a6e6f0800000000000000
+      internalID: -655658134429399463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alfabeto_7
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1457
+        width: 326
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8e07826f90511060800000000000000
+      internalID: 6922402747728203404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alfabeto_8
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 1460
+        width: 105
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a18035a9ae18ce60800000000000000
+      internalID: 7982664053483930025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alfabeto_9
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 1457
+        width: 263
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6d86d7162c32fe00800000000000000
+      internalID: 1076989395201330542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alfabeto_10
+      rect:
+        serializedVersion: 2
+        x: 1416
+        y: 1458
+        width: 268
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6335092711316f80800000000000000
+      internalID: -8115151078002707605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alfabeto_11
+      rect:
+        serializedVersion: 2
+        x: 1773
+        y: 1457
+        width: 309
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79b558ce675fee1a0800000000000000
+      internalID: -6778210498022909033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alfabeto_12
+      rect:
+        serializedVersion: 2
+        x: 2153
+        y: 1458
+        width: 346
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e539859de26eb4710800000000000000
+      internalID: 1678688375014986590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alfabeto_13
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 845
+        width: 307
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 146b88fbf66332530800000000000000
+      internalID: 3828963961777731137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alfabeto_14
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 845
+        width: 307
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 360bf68c0a5a5bce0800000000000000
+      internalID: -1390022799997816733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alfabeto_15
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 843
+        width: 281
+        height: 339
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33db5b43d27e96490800000000000000
+      internalID: -7752411102197727949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alfabeto_16
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 845
+        width: 311
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 977d6be2f1e551800800000000000000
+      internalID: 582475214835079033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alfabeto_17
+      rect:
+        serializedVersion: 2
+        x: 1522
+        y: 844
+        width: 274
+        height: 339
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08264413ab68af8b0800000000000000
+      internalID: -5117629892304543104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alfabeto_18
+      rect:
+        serializedVersion: 2
+        x: 1838
+        y: 849
+        width: 309
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6d90c727060dba40800000000000000
+      internalID: 5385467357206453614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alfabeto_19
+      rect:
+        serializedVersion: 2
+        x: 2173
+        y: 850
+        width: 341
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7d52258cab8a1e30800000000000000
+      internalID: 4475042752830266746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alfabeto_20
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 274
+        width: 325
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86585a255f9cc1e80800000000000000
+      internalID: -8206462365485136536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alfabeto_21
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 274
+        width: 347
+        height: 335
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ece343a3d7ff61b70800000000000000
+      internalID: 8869557429465267918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alfabeto_22
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 273
+        width: 345
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57bf639a81a327cf0800000000000000
+      internalID: -256078351214118027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alfabeto_23
+      rect:
+        serializedVersion: 2
+        x: 1376
+        y: 272
+        width: 305
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77b856004ba2ce240800000000000000
+      internalID: 4822276253596093303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alfabeto_24
+      rect:
+        serializedVersion: 2
+        x: 1761
+        y: 271
+        width: 305
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb5637bc60826e340800000000000000
+      internalID: 4892642054832874942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alfabeto_25
+      rect:
+        serializedVersion: 2
+        x: 2147
+        y: 268
+        width: 353
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74c7361d5e6d93230800000000000000
+      internalID: 3619160058117717063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Alfabeto_0: -8489948274006799204
+      Alfabeto_1: -2052528644791023063
+      Alfabeto_10: -8115151078002707605
+      Alfabeto_11: -6778210498022909033
+      Alfabeto_12: 1678688375014986590
+      Alfabeto_13: 3828963961777731137
+      Alfabeto_14: -1390022799997816733
+      Alfabeto_15: -7752411102197727949
+      Alfabeto_16: 582475214835079033
+      Alfabeto_17: -5117629892304543104
+      Alfabeto_18: 5385467357206453614
+      Alfabeto_19: 4475042752830266746
+      Alfabeto_2: 7634443294820324928
+      Alfabeto_20: -8206462365485136536
+      Alfabeto_21: 8869557429465267918
+      Alfabeto_22: -256078351214118027
+      Alfabeto_23: 4822276253596093303
+      Alfabeto_24: 4892642054832874942
+      Alfabeto_25: 3619160058117717063
+      Alfabeto_3: 7047342657171972634
+      Alfabeto_4: -3066036921043931745
+      Alfabeto_5: 6576021853318849631
+      Alfabeto_6: -655658134429399463
+      Alfabeto_7: 6922402747728203404
+      Alfabeto_8: 7982664053483930025
+      Alfabeto_9: 1076989395201330542
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
