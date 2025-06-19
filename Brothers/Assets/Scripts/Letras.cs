@@ -4,7 +4,7 @@ public class Letras : MonoBehaviour
 {
     public AudioClip SomdaLetra;
     private AudioControl AC;
-    public string Nome_Letra;
+    public char Nome_Letra;
 
     private void Start()
     {

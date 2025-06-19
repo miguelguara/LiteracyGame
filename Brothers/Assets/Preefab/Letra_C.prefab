@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SomdaLetra: {fileID: 0}
-  Nome_Letra: C
+  Nome_Letra: 67
 --- !u!50 &-4235307025362569988
 Rigidbody2D:
   serializedVersion: 5
