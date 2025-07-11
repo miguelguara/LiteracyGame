@@ -3,10 +3,15 @@ using UnityEngine;
 public class Word_manager : MonoBehaviour
 {
     public bool[] Sequencia;
+    //Vai receber o numero do playerPrefs
+    private int num;
     
-
     void Start()
     {
+        num = PlayerPrefs.GetInt("QTD_Letras");
+
+        Sequencia = new bool[num];
+
         for(int i =0; i< Sequencia.Length; i++)
         {
             Sequencia[i] = false;

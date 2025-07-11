@@ -4,6 +4,7 @@ using UnityEngine.UI;
 public class MenuPrincipal : MonoBehaviour
 {
     public Text TextoMenu;
+    
 
     public void Start()
     {

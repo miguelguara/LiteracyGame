@@ -4,7 +4,7 @@ using UnityEngine.Audio;
 public class AudioControl : MonoBehaviour
 {   
     private AudioSource AS;
-
+  
     void Start()
     {
         AS = GetComponent<AudioSource>();
