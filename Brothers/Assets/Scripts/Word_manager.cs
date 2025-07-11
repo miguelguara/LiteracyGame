@@ -3,6 +3,7 @@ using UnityEngine;
 public class Word_manager : MonoBehaviour
 {
     public bool[] Sequencia;
+    
     //Vai receber o numero do playerPrefs
     private int num;
     

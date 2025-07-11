@@ -255,10 +255,10 @@ RectTransform:
   - {fileID: 1926449277}
   m_Father: {fileID: 784955140}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 1233, y: 192.21}
-  m_SizeDelta: {x: 787.7317, y: 384.42}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 805, y: -3.3392487}
+  m_SizeDelta: {x: 787.7317, y: 363.3215}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &893066769
 MonoBehaviour:
@@ -348,6 +348,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextoMenu: {fileID: 2071749289}
+  Pannel_Levels: {fileID: 893066768}
 --- !u!1 &1844033225
 GameObject:
   m_ObjectHideFlags: 0
