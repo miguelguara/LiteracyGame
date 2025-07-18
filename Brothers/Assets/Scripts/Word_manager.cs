@@ -4,9 +4,13 @@ using UnityEngine.UI;
 public class Word_manager : MonoBehaviour
 {
     public bool[] Sequencia;
-
-     //A foto a ser mostrada na imagem
+    [SerializeField]
+    public RectTransform Vitoria_Panel;
+    //A foto a ser mostrada na imagem
     // public Sprite Fotos;
+
+    [SerializeField]
+    private AudioClip Yay;
 
       private AudioControl AC;
     //Vai mostrar a foto do objeto da palavra
@@ -19,6 +23,7 @@ public class Word_manager : MonoBehaviour
     {
         num = PlayerPrefs.GetInt("QTD_Letras");
 
+        AC = FindObjectOfType<AudioControl>();
         Sequencia = new bool[num];
 
         for(int i =0; i< Sequencia.Length; i++)
@@ -69,6 +74,8 @@ public class Word_manager : MonoBehaviour
         if (Correto)
         {
             Debug.Log("A criança acertou!!!!!!");
+            Vitoria_Panel.LeanMoveY(50f, 0.5f);
+            AC.Tocar_SFX(Yay);
         }
         else 
         {

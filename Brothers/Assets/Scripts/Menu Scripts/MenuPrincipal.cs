@@ -4,13 +4,13 @@ using UnityEngine.UI;
 
 public class MenuPrincipal : MonoBehaviour
 {
-    public Text TextoMenu;
+    public Image Logo;
     [SerializeField]
     private RectTransform Pannel_Levels;
 
     public void Start()
     {
-        TextoMenu.gameObject.LeanScale(new Vector3(1.3f,1.3f),0.45f).setLoopPingPong();
+        Logo.gameObject.LeanScale(new Vector3(1f,1f),0.45f).setLoopPingPong();
     }
     
     public void PannelIN()
