@@ -11,6 +11,30 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: a36d197829e6a164b9c9f6750b9a658a
+  - enabled: 1
+    path: Assets/Scenes/Cachorro.unity
+    guid: d685a6eafed489140accb4fcf735b5c2
+  - enabled: 1
+    path: Assets/Scenes/Camisa.unity
+    guid: eb14ad931b000ad4caa31c61ed03ab66
+  - enabled: 1
+    path: Assets/Scenes/Carro.unity
+    guid: 447877f7ccb4e9a4bb1f9245886ece32
+  - enabled: 1
+    path: Assets/Scenes/Casa.unity
+    guid: 47e59cf5661774c4bbc4f57e6d7b9f3f
+  - enabled: 1
+    path: Assets/Scenes/Girafa.unity
+    guid: dcc1de582a851134b9c56d61d814721c
+  - enabled: 1
+    path: Assets/Scenes/Lapis.unity
+    guid: a4ff404037079af4490bb2e1f55e0224
+  - enabled: 1
+    path: Assets/Scenes/Moto.unity
+    guid: 88d930d3c4b3e9444a58192e5c9b8428
+  - enabled: 1
+    path: Assets/Scenes/Zebra.unity
+    guid: 8ce98ec7084ae844b99d56f903b2f71e
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

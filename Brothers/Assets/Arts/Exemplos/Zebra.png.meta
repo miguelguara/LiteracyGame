@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Zebra_0: 8845663894121712491
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

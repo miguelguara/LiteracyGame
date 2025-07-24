@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Icon_Small_Blank_Arrow_0: 1039906935464158247
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

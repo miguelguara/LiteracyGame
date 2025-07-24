@@ -14,6 +14,6 @@ public class Parabens : MonoBehaviour
 
     public void Quit()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("Menu");
     }
 }

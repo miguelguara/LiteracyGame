@@ -5,7 +5,7 @@ public class Word_manager : MonoBehaviour
 {
     public bool[] Sequencia;
     [SerializeField]
-    public RectTransform Vitoria_Panel;
+    private RectTransform Vitoria_Panel;
     //A foto a ser mostrada na imagem
     public Sprite[] Fotos;
 
@@ -14,20 +14,24 @@ public class Word_manager : MonoBehaviour
     [SerializeField]
     private AudioClip Yay;
 
-      private AudioControl AC;
+    private AudioControl AC;
     //Vai mostrar a foto do objeto da palavra
     public Image Imagem_Exemplo;
 
     //Vai receber o numero do playerPrefs
     private int num;
+    private int indexImage;
     
     void Start()
     {
         num = PlayerPrefs.GetInt("QTD_Letras");
+        indexImage = PlayerPrefs.GetInt("IDX_Imagem");
 
         AC = Object.FindFirstObjectByType<AudioControl>();
         ReturnButton = Object.FindFirstObjectByType<Return_Script>().gameObject;
+
         Sequencia = new bool[num];
+        Imagem_Exemplo.sprite = Fotos[indexImage];
 
         for(int i =0; i< Sequencia.Length; i++)
         {

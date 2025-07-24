@@ -280,7 +280,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 188965253}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1558295982}
+        m_TargetAssemblyTypeName: Botao_Fase, NewAssembly
+        m_MethodName: Carregar_Fase
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &188965253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -559,7 +571,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 630165241}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 990543099}
+        m_TargetAssemblyTypeName: Botao_Fase, NewAssembly
+        m_MethodName: Carregar_Fase
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &630165241
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1092,6 +1116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 990543098}
+  - component: {fileID: 990543099}
   m_Layer: 5
   m_Name: Buttoncode
   m_TagString: Untagged
@@ -1119,6 +1144,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &990543099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 990543097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93e5f5e48e47ad94a8874272ba54f50e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Numero_de_Letras: 4
+  Numero_imagem: 0
+  Index_Fase: 5
 --- !u!1 &1031900043
 GameObject:
   m_ObjectHideFlags: 0
@@ -1201,7 +1241,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1031900046}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1893190715}
+        m_TargetAssemblyTypeName: Botao_Fase, NewAssembly
+        m_MethodName: Carregar_Fase
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1031900046
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1403,7 +1455,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1088295900}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1758679917}
+        m_TargetAssemblyTypeName: Botao_Fase, NewAssembly
+        m_MethodName: Carregar_Fase
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1088295900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1451,6 +1515,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1202183510}
+  - component: {fileID: 1202183511}
   m_Layer: 5
   m_Name: Buttoncode (9)
   m_TagString: Untagged
@@ -1478,6 +1543,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1202183511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1202183509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93e5f5e48e47ad94a8874272ba54f50e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Numero_de_Letras: 5
+  Numero_imagem: 3
+  Index_Fase: 9
 --- !u!1 &1216721479
 GameObject:
   m_ObjectHideFlags: 0
@@ -1623,6 +1703,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1367509377}
+  - component: {fileID: 1367509378}
   m_Layer: 5
   m_Name: Buttoncode (1)
   m_TagString: Untagged
@@ -1650,6 +1731,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1367509378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1367509376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93e5f5e48e47ad94a8874272ba54f50e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Numero_de_Letras: 5
+  Numero_imagem: 4
+  Index_Fase: 4
 --- !u!1 &1401292554
 GameObject:
   m_ObjectHideFlags: 0
@@ -1659,6 +1755,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1401292555}
+  - component: {fileID: 1401292556}
   m_Layer: 5
   m_Name: Buttoncode (7)
   m_TagString: Untagged
@@ -1686,6 +1783,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1401292556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1401292554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93e5f5e48e47ad94a8874272ba54f50e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Numero_de_Letras: 5
+  Numero_imagem: 2
+  Index_Fase: 7
 --- !u!1 &1558295980
 GameObject:
   m_ObjectHideFlags: 0
@@ -1695,6 +1807,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1558295981}
+  - component: {fileID: 1558295982}
   m_Layer: 5
   m_Name: Buttoncode (6)
   m_TagString: Untagged
@@ -1722,6 +1835,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1558295982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1558295980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93e5f5e48e47ad94a8874272ba54f50e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Numero_de_Letras: 6
+  Numero_imagem: 5
+  Index_Fase: 6
 --- !u!1 &1628647046
 GameObject:
   m_ObjectHideFlags: 0
@@ -1868,8 +1996,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93e5f5e48e47ad94a8874272ba54f50e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Numero_de_Letras: 4
-  Numero_imagem: 3
+  Numero_de_Letras: 0
+  Numero_imagem: 0
   Index_Fase: 0
 --- !u!1 &1676536508
 GameObject:
@@ -2032,7 +2160,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1677099129}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1401292556}
+        m_TargetAssemblyTypeName: Botao_Fase, NewAssembly
+        m_MethodName: Carregar_Fase
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1677099129
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2213,6 +2353,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1758679916}
+  - component: {fileID: 1758679917}
   m_Layer: 5
   m_Name: Buttoncode (8)
   m_TagString: Untagged
@@ -2240,6 +2381,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1758679917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1758679915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93e5f5e48e47ad94a8874272ba54f50e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Numero_de_Letras: 6
+  Numero_imagem: 6
+  Index_Fase: 3
 --- !u!1 &1775512655
 GameObject:
   m_ObjectHideFlags: 0
@@ -2301,6 +2457,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1819063148}
+  - component: {fileID: 1819063149}
   m_Layer: 5
   m_Name: Buttoncode (5)
   m_TagString: Untagged
@@ -2328,6 +2485,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1819063149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1819063147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93e5f5e48e47ad94a8874272ba54f50e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Numero_de_Letras: 4
+  Numero_imagem: 1
+  Index_Fase: 8
 --- !u!1 &1844033225
 GameObject:
   m_ObjectHideFlags: 0
@@ -2489,7 +2661,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1870140353}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1367509378}
+        m_TargetAssemblyTypeName: Botao_Fase, NewAssembly
+        m_MethodName: Carregar_Fase
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1870140353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2537,6 +2721,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1893190714}
+  - component: {fileID: 1893190715}
   m_Layer: 5
   m_Name: Buttoncode (10)
   m_TagString: Untagged
@@ -2564,6 +2749,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1893190715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1893190713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93e5f5e48e47ad94a8874272ba54f50e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Numero_de_Letras: 8
+  Numero_imagem: 7
+  Index_Fase: 2
 --- !u!1 &1926449276
 GameObject:
   m_ObjectHideFlags: 0
@@ -2782,7 +2982,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1993072087}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1202183511}
+        m_TargetAssemblyTypeName: Botao_Fase, NewAssembly
+        m_MethodName: Carregar_Fase
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1993072087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3255,7 +3467,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2092139025}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1819063149}
+        m_TargetAssemblyTypeName: Botao_Fase, NewAssembly
+        m_MethodName: Carregar_Fase
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2092139025
 MonoBehaviour:
   m_ObjectHideFlags: 0
