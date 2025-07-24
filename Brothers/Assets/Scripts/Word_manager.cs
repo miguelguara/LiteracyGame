@@ -29,6 +29,7 @@ public class Word_manager : MonoBehaviour
 
         AC = Object.FindFirstObjectByType<AudioControl>();
         ReturnButton = Object.FindFirstObjectByType<Return_Script>().gameObject;
+        Vitoria_Panel = GameObject.Find("Parabens").GetComponent<RectTransform>();
 
         Sequencia = new bool[num];
         Imagem_Exemplo.sprite = Fotos[indexImage];

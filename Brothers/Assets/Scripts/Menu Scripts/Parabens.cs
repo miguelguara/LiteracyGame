@@ -9,6 +9,7 @@ public class Parabens : MonoBehaviour
 
    public void Reload() 
     {
+        FaseIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(FaseIndex);
     }
 

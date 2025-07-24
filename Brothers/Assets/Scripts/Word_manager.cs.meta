@@ -1,2 +1,14 @@
 fileFormatVersion: 2
 guid: c41302b388ac9744f94a9b5e6d25a514
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - Vitoria_Panel: {instanceID: 0}
+  - Yay: {fileID: 8300000, guid: 39c6ad101931217498bd01bba7dd22f7, type: 3}
+  - Imagem_Exemplo: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
