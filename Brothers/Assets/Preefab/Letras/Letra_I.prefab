@@ -175,5 +175,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7a32019331bbe649abbc22bd5e262bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SomdaLetra: {fileID: 0}
+  SomdaLetra: {fileID: 8300000, guid: 834b4df138921614b98e23d1416dd496, type: 3}
   Nome_Letra: 73

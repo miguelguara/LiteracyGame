@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7a32019331bbe649abbc22bd5e262bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SomdaLetra: {fileID: 0}
+  SomdaLetra: {fileID: 8300000, guid: 5e77eaf329d8fa74a836c9b3b037282e, type: 3}
   Nome_Letra: 68
 --- !u!50 &-2948050064695576229
 Rigidbody2D:

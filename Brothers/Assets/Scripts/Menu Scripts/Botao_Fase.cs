@@ -15,6 +15,7 @@ public class Botao_Fase : MonoBehaviour
     {
         //Salva a quantidade de letras na palavra
         PlayerPrefs.SetInt("QTD_Letras",Numero_de_Letras);
+        PlayerPrefs.SetInt("IDX_Imagem",Numero_imagem);
         SceneManager.LoadScene(Index_Fase);
     }
 }

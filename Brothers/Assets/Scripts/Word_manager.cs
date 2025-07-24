@@ -7,7 +7,9 @@ public class Word_manager : MonoBehaviour
     [SerializeField]
     public RectTransform Vitoria_Panel;
     //A foto a ser mostrada na imagem
-    // public Sprite Fotos;
+    public Sprite[] Fotos;
+
+    private GameObject ReturnButton;
 
     [SerializeField]
     private AudioClip Yay;
@@ -23,7 +25,8 @@ public class Word_manager : MonoBehaviour
     {
         num = PlayerPrefs.GetInt("QTD_Letras");
 
-        AC = FindObjectOfType<AudioControl>();
+        AC = Object.FindFirstObjectByType<AudioControl>();
+        ReturnButton = Object.FindFirstObjectByType<Return_Script>().gameObject;
         Sequencia = new bool[num];
 
         for(int i =0; i< Sequencia.Length; i++)
@@ -73,13 +76,13 @@ public class Word_manager : MonoBehaviour
         bool Correto = Checagem();
         if (Correto)
         {
-            Debug.Log("A criança acertou!!!!!!");
             Vitoria_Panel.LeanMoveY(50f, 0.5f);
+            ReturnButton.SetActive(false);
             AC.Tocar_SFX(Yay);
         }
         else 
         {
-            Debug.Log("Criança burra do KRL !!!!!!!");
+            Debug.Log("A criança errou");
         } 
     }
 }
