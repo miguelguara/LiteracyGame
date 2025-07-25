@@ -1998,7 +1998,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Numero_de_Letras: 0
   Numero_imagem: 0
-  Index_Fase: 0
+  Index_Fase: 1
 --- !u!1 &1676536508
 GameObject:
   m_ObjectHideFlags: 0
