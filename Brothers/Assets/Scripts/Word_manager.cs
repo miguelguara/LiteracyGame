@@ -12,7 +12,7 @@ public class Word_manager : MonoBehaviour
     private GameObject ReturnButton;
 
     [SerializeField]
-    private AudioClip Yay;
+    private AudioClip Yay,Tente_Denovo;
 
     private AudioControl AC;
     //Vai mostrar a foto do objeto da palavra
@@ -87,7 +87,7 @@ public class Word_manager : MonoBehaviour
         }
         else 
         {
-            Debug.Log("A criança errou");
+            AC.Tocar_SFX(Tente_Denovo);
         } 
     }
 }

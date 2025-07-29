@@ -428,9 +428,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5
-        y: 257
+        y: 275
         width: 117
-        height: 26
+        height: 8
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -471,10 +471,10 @@ TextureImporter:
       name: GUI_3
       rect:
         serializedVersion: 2
-        x: 1
-        y: 225
-        width: 46
-        height: 46
+        x: 2
+        y: 226
+        width: 44
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -912,12 +912,12 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 164
-        width: 49
-        height: 45
+        y: 176
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 7, y: 6, z: 7, w: 7}
       customData: 
       outline: []
       physicsShape: []

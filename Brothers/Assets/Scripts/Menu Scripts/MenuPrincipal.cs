@@ -38,4 +38,9 @@ public class MenuPrincipal : MonoBehaviour
         aberto = 0;
         PlayerPrefs.SetInt("Jogo-Aberto", aberto);
     }
+
+    public void Sair_do_Jogo() 
+    {
+        Application.Quit();
+    }
 }

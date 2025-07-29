@@ -478,4 +478,5 @@ MonoBehaviour:
   - {fileID: 21300000, guid: c3f711ea8aa479046b00c04439760c3f, type: 3}
   - {fileID: 21300000, guid: 999a8d2820afef34c8a979df08ffd2f4, type: 3}
   Yay: {fileID: 8300000, guid: 39c6ad101931217498bd01bba7dd22f7, type: 3}
+  Tente_Denovo: {fileID: 8300000, guid: d55aa7bc0fc5ed14083f391240ba80a3, type: 3}
   Imagem_Exemplo: {fileID: 6255356845708154039}
