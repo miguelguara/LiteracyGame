@@ -56,13 +56,13 @@ public class Audio_Config : MonoBehaviour
     public void Musica_Vol(float vol) 
     {
         Musica_AS.volume = vol;
-       // PlayerPrefs.SetFloat("Vol_musica", vol);
+        PlayerPrefs.SetFloat("Vol_musica", vol);
     }
 
     public void Sons_Vol(float vol)
     {
         Sons_AS.volume = vol;
-       // PlayerPrefs.SetFloat("Vol_sons", vol);
+       PlayerPrefs.SetFloat("Vol_sons", vol);
     }
 
 }
