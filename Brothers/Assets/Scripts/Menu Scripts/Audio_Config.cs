@@ -3,10 +3,10 @@ using UnityEngine.UI;
 
 public class Audio_Config : MonoBehaviour
 {
-    //Vão controlar o volume dos audios 
+    //Vao controlar o volume dos audios 
     private AudioSource Musica_AS,Sons_AS;
 
-    //Controla a animação de aparecer as configurações
+    //Controla a animacao de aparecer as configuracoes
     private RectTransform Config_pos;
 
     [SerializeField]
@@ -15,7 +15,7 @@ public class Audio_Config : MonoBehaviour
     private void Awake()
     {
         //Atribui os objetos
-        Musica_AS = GetComponent<AudioSource>();
+        Musica_AS = GameObject.Find("MusicSourceOBJ").GetComponent<AudioSource>();
         Sons_AS = GameObject.Find("AudioSourceOBJ").GetComponent<AudioSource>();
         Config_pos = GameObject.Find("ConfigBG").GetComponent<RectTransform>();
     }
@@ -23,14 +23,14 @@ public class Audio_Config : MonoBehaviour
     private void Start()
     {
         //Checa se tem salvo na memoria 
-        if (PlayerPrefs.HasKey("Vol_musica")) 
+        if (PlayerPrefs.HasKey("Vol_musica"))
         {
             Musica_AS.volume = PlayerPrefs.GetFloat("Vol_musica");
             Musica_Slider.value = PlayerPrefs.GetFloat("Vol_musica");
         }
-        else 
+        else
         {
-            Musica_AS.volume=1;
+            Musica_AS.volume = 1;
         }
         if (PlayerPrefs.HasKey("Vol_sons"))
         {

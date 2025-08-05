@@ -11,7 +11,7 @@ public class Letras : MonoBehaviour
         AC = FindAnyObjectByType<AudioControl>();
     }
 
-    private void OnMouseDown()
+    public void SomLetra()
     {
         AC.Tocar_SFX(SomdaLetra);
     }
