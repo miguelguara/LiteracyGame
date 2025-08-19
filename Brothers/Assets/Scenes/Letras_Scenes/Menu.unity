@@ -1497,7 +1497,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Start
+  m_text: Letras
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c88d5cdf68d8ba6449e9bd6e5a354b5a, type: 2}
   m_sharedMaterial: {fileID: -3043544905996331431, guid: c88d5cdf68d8ba6449e9bd6e5a354b5a, type: 2}
