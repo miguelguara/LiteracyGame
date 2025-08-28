@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Letras_Scenes/Menu.unity
+    path: Assets/Scenes/Menu.unity
     guid: a36d197829e6a164b9c9f6750b9a658a
   - enabled: 1
     path: Assets/Scenes/Letras_Scenes/Tela_Inicial.unity

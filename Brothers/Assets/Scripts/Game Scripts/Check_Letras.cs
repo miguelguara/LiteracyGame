@@ -4,7 +4,9 @@ public class Check_Letras : MonoBehaviour
     public char Letra_Verificada;
     //Will send a message if the letter is right
     private Word_manager WM;
-    
+
+    private GameObject Letra_errada;
+
 
     private void Start()
     {
@@ -19,6 +21,10 @@ public class Check_Letras : MonoBehaviour
             WM.Acerto();
             col.gameObject.GetComponent<Letras>().SomLetra();
         }
+        else
+        {
+            Letra_errada = col.gameObject;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D col)
@@ -27,5 +33,17 @@ public class Check_Letras : MonoBehaviour
         {
             WM.Erro();
         }
+        else if (col.gameObject.GetComponent<Letras>().Nome_Letra != Letra_Verificada)
+        {
+            Letra_errada = null;
+        }
+    }
+
+    public void expulsar_Letra()
+    {
+        if (Letra_errada != null)
+        {
+            Letra_errada.gameObject.GetComponent<Rigidbody2D>().AddForce(Vector3.up * 9f, ForceMode2D.Impulse);
+        }    
     }
 }

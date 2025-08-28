@@ -21,6 +21,8 @@ public class Word_manager : MonoBehaviour
     //Vai receber o numero do playerPrefs
     private int num;
     private int indexImage;
+
+    private Check_Letras[] Letras_Erradas;
     
     void Start()
     {
@@ -30,6 +32,8 @@ public class Word_manager : MonoBehaviour
         AC = Object.FindFirstObjectByType<AudioControl>();
         ReturnButton = Object.FindFirstObjectByType<Return_Script>().gameObject;
         Vitoria_Panel = GameObject.Find("Parabens").GetComponent<RectTransform>();
+
+        Letras_Erradas = FindObjectsOfType<Check_Letras>();
 
         Sequencia = new bool[num];
         Imagem_Exemplo.sprite = Fotos[indexImage];
@@ -85,9 +89,13 @@ public class Word_manager : MonoBehaviour
             ReturnButton.SetActive(false);
             AC.Tocar_SFX(Yay);
         }
-        else 
+        else
         {
             AC.Tocar_SFX(Tente_Denovo);
+            for (int i = 0; i < Letras_Erradas.Length; i++)
+            {
+                Letras_Erradas[i].expulsar_Letra();    
+            }
         } 
     }
 }
