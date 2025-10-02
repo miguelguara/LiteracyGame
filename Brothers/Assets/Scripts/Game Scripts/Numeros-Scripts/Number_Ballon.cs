@@ -13,6 +13,10 @@ public class Number_Ballon : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D c)
     {
-        NM.instanciar();
+        if (c.gameObject.GetComponent<Number>().numero == numero)
+        {
+           // c.gameObject.GetComponent<Number>().som_Numero();
+            NM.instanciar();    
+        }
     }
 }
