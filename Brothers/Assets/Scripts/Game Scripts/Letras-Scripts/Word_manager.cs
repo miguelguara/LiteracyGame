@@ -100,11 +100,8 @@ public class Word_manager : MonoBehaviour
         }
     }
 
-   /* IEnumerable Correto()
-    {
-        
-        yield return new WaitForSeconds();
-        
+    /*IEnumerator Correto()
+    {   
         Vitoria_Panel.LeanMoveY(50f, 0.5f);
         ReturnButton.SetActive(false);
         AC.Tocar_SFX(Yay);
