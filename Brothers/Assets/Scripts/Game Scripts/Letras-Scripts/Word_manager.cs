@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,7 +13,7 @@ public class Word_manager : MonoBehaviour
     private GameObject ReturnButton;
 
     [SerializeField]
-    private AudioClip Yay,Tente_Denovo;
+    private AudioClip Yay, Tente_Denovo;
 
     private AudioControl AC;
     //Vai mostrar a foto do objeto da palavra
@@ -23,7 +24,7 @@ public class Word_manager : MonoBehaviour
     private int indexImage;
 
     private Check_Letras[] Letras_Erradas;
-    
+
     void Start()
     {
         num = PlayerPrefs.GetInt("QTD_Letras");
@@ -38,18 +39,18 @@ public class Word_manager : MonoBehaviour
         Sequencia = new bool[num];
         Imagem_Exemplo.sprite = Fotos[indexImage];
 
-        for(int i =0; i< Sequencia.Length; i++)
+        for (int i = 0; i < Sequencia.Length; i++)
         {
             Sequencia[i] = false;
         }
     }
 
     //Percorre pelo vetor de bool e deixa o primeiro em TRUE
-    public void Acerto() 
+    public void Acerto()
     {
-        for (int i = 0; i < Sequencia.Length; i++) 
+        for (int i = 0; i < Sequencia.Length; i++)
         {
-            if (Sequencia[i] == false) 
+            if (Sequencia[i] == false)
             {
                 Sequencia[i] = true;
                 break;
@@ -58,9 +59,9 @@ public class Word_manager : MonoBehaviour
     }
 
     //Percorre pelo vetor de bool e deixa o primeiro em FALSE caso a letra seja retirada do quadrado
-    public void Erro() 
+    public void Erro()
     {
-        for(int i = 0;i< Sequencia.Length; i++) 
+        for (int i = 0; i < Sequencia.Length; i++)
         {
             if (Sequencia[i] == true)
             {
@@ -70,11 +71,11 @@ public class Word_manager : MonoBehaviour
         }
     }
 
-    private bool Checagem() 
+    private bool Checagem()
     {
         for (int i = 0; i < Sequencia.Length; i++)
         {
-            if (Sequencia[i]==false)
+            if (Sequencia[i] == false)
                 return false;
         }
         return true;
@@ -94,8 +95,18 @@ public class Word_manager : MonoBehaviour
             AC.Tocar_SFX(Tente_Denovo);
             for (int i = 0; i < Letras_Erradas.Length; i++)
             {
-                Letras_Erradas[i].expulsar_Letra();    
+                Letras_Erradas[i].expulsar_Letra();
             }
-        } 
+        }
     }
+
+   /* IEnumerable Correto()
+    {
+        
+        yield return new WaitForSeconds();
+        
+        Vitoria_Panel.LeanMoveY(50f, 0.5f);
+        ReturnButton.SetActive(false);
+        AC.Tocar_SFX(Yay);
+    }*/
 }
