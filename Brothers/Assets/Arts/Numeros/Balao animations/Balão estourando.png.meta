@@ -1,0 +1,339 @@
+fileFormatVersion: 2
+guid: a7b149cfa99cb094e9bf125c016275b6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7783836271368066724
+    second: "Bal\xE3o estourando_0"
+  - first:
+      213: 2411196487289078221
+    second: "Bal\xE3o estourando_1"
+  - first:
+      213: 6619539386609936813
+    second: "Bal\xE3o estourando_2"
+  - first:
+      213: 2551930241371865936
+    second: "Bal\xE3o estourando_3"
+  - first:
+      213: -3348804635711341573
+    second: "Bal\xE3o estourando_4"
+  - first:
+      213: -6909193076031131887
+    second: "Bal\xE3o estourando_5"
+  - first:
+      213: -2169135273945246178
+    second: "Bal\xE3o estourando_6"
+  - first:
+      213: 8909221639196275792
+    second: "Bal\xE3o estourando_7"
+  - first:
+      213: -5555728115915448287
+    second: "Bal\xE3o estourando_8"
+  - first:
+      213: -6754800140074631204
+    second: "Bal\xE3o estourando_9"
+  - first:
+      213: 4273840488793138529
+    second: "Bal\xE3o estourando_10"
+  - first:
+      213: 543616529525749274
+    second: "Bal\xE3o estourando_11"
+  - first:
+      213: 6629592987833905379
+    second: "Bal\xE3o estourando_12"
+  - first:
+      213: 5869719291576956649
+    second: "Bal\xE3o estourando_13"
+  - first:
+      213: 7438047770303857870
+    second: "Bal\xE3o estourando_14"
+  - first:
+      213: 1854314764190799642
+    second: "Bal\xE3o estourando_15"
+  - first:
+      213: 6089503224033912800
+    second: "Bal\xE3o estourando_16"
+  - first:
+      213: -5560505653771050611
+    second: "Bal\xE3o estourando_17"
+  - first:
+      213: -7750402795158382694
+    second: "Bal\xE3o estourando_18"
+  - first:
+      213: 8114675488750825371
+    second: "Bal\xE3o estourando_19"
+  - first:
+      213: 7934706768227439391
+    second: "Bal\xE3o estourando_20"
+  - first:
+      213: 8043840881859849395
+    second: "Bal\xE3o estourando_21"
+  - first:
+      213: 3674974929256440662
+    second: "Bal\xE3o estourando_22"
+  - first:
+      213: -118566763989315497
+    second: "Bal\xE3o estourando_23"
+  - first:
+      213: 8860930124994072887
+    second: "Bal\xE3o estourando_24"
+  - first:
+      213: 4834191687196409511
+    second: "Bal\xE3o estourando_25"
+  - first:
+      213: -6022383312806419908
+    second: "Bal\xE3o estourando_26"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "Bal\xE3o estourando_0"
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 207
+        width: 286
+        height: 526
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a6d1b829ddb50c60800000000000000
+      internalID: 7783836271368066724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bal\xE3o estourando_1"
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 216
+        width: 307
+        height: 457
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc1098c1e6a467120800000000000000
+      internalID: 2411196487289078221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bal\xE3o estourando_2"
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 306
+        width: 355
+        height: 470
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da9a79310045ddb50800000000000000
+      internalID: 6619539386609936813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bal\xE3o estourando_3"
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 215
+        width: 287
+        height: 472
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0530c88a8074a6320800000000000000
+      internalID: 2551930241371865936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 3d3441ba91a683a4581dbe9153cb054d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "Bal\xE3o estourando_0": 7783836271368066724
+      "Bal\xE3o estourando_1": 2411196487289078221
+      "Bal\xE3o estourando_10": 4273840488793138529
+      "Bal\xE3o estourando_11": 543616529525749274
+      "Bal\xE3o estourando_12": 6629592987833905379
+      "Bal\xE3o estourando_13": 5869719291576956649
+      "Bal\xE3o estourando_14": 7438047770303857870
+      "Bal\xE3o estourando_15": 1854314764190799642
+      "Bal\xE3o estourando_16": 6089503224033912800
+      "Bal\xE3o estourando_17": -5560505653771050611
+      "Bal\xE3o estourando_18": -7750402795158382694
+      "Bal\xE3o estourando_19": 8114675488750825371
+      "Bal\xE3o estourando_2": 6619539386609936813
+      "Bal\xE3o estourando_20": 7934706768227439391
+      "Bal\xE3o estourando_21": 8043840881859849395
+      "Bal\xE3o estourando_22": 3674974929256440662
+      "Bal\xE3o estourando_23": -118566763989315497
+      "Bal\xE3o estourando_24": 8860930124994072887
+      "Bal\xE3o estourando_25": 4834191687196409511
+      "Bal\xE3o estourando_26": -6022383312806419908
+      "Bal\xE3o estourando_3": 2551930241371865936
+      "Bal\xE3o estourando_4": -3348804635711341573
+      "Bal\xE3o estourando_5": -6909193076031131887
+      "Bal\xE3o estourando_6": -2169135273945246178
+      "Bal\xE3o estourando_7": 8909221639196275792
+      "Bal\xE3o estourando_8": -5555728115915448287
+      "Bal\xE3o estourando_9": -6754800140074631204
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
