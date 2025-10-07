@@ -9,6 +9,7 @@ public class Word_manager : MonoBehaviour
     private RectTransform Vitoria_Panel;
     //A foto a ser mostrada na imagem
     public Sprite[] Fotos;
+    //public AudioClip [] Palavras;
 
     private GameObject ReturnButton;
 
