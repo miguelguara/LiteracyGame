@@ -6,15 +6,15 @@ public class MenuPrincipal : MonoBehaviour
     public Image Logo;
     [SerializeField]
     private RectTransform Pannel_Levels;
-    //Verifica na memoria se o jogo já foi aberto
+    //Verifica na memoria se o jogo jï¿½ foi aberto
 
     private int aberto;
     public void Awake()
     {
-        //faz a logo mudar de escala parecendo uma animação
+        //faz a logo mudar de escala parecendo uma animaï¿½ï¿½o
         Logo.gameObject.LeanScale(new Vector3(1f,1f),0.45f).setLoopPingPong();
         aberto = PlayerPrefs.GetInt("Jogo-Aberto");
-        if (aberto == 1) 
+        if (aberto == 1)
         {
             PannelIN();
         }
