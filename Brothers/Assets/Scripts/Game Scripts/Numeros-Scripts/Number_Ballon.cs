@@ -1,3 +1,4 @@
+using Unity.Mathematics;
 using UnityEngine;
 
 public class Number_Ballon : MonoBehaviour
@@ -7,6 +8,9 @@ public class Number_Ballon : MonoBehaviour
     private int numero;
     [SerializeField]
     private AudioClip popClip;
+
+    [SerializeField]
+    private GameObject NumberObj;
     private Number_Manager NM;
     private AudioControl AC;
     private Animator anim;
@@ -15,6 +19,7 @@ public class Number_Ballon : MonoBehaviour
         NM = FindFirstObjectByType<Number_Manager>();
         anim = GetComponent<Animator>();
         AC = Object.FindFirstObjectByType<AudioControl>();
+        NumberObj = transform.GetChild(0).gameObject;
     }
 
     void OnCollisionEnter2D(Collision2D c)
@@ -25,6 +30,7 @@ public class Number_Ballon : MonoBehaviour
             anim.SetBool("Pop", true);
             NM.instanciar();
             AC.Tocar_SFX(popClip);
+            Destroy(NumberObj);
             Destroy(this.gameObject, 0.3f);
         }
     }
