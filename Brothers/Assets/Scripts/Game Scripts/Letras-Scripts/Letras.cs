@@ -5,7 +5,6 @@ public class Letras : MonoBehaviour
     public AudioClip SomdaLetra;
     private AudioControl AC;
     public char Nome_Letra;
-
     private Rigidbody2D rb;
 
     private void Start()
