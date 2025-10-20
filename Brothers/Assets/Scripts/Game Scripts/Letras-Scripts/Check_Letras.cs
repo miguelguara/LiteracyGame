@@ -2,7 +2,7 @@ using UnityEngine;
 public class Check_Letras : MonoBehaviour
 {
     public char Letra_Verificada;
-    //Will send a message if the letter is right
+
     private Word_manager WM;
 
     private GameObject Letra_errada;
