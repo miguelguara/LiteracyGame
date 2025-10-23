@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Number_Ballon : MonoBehaviour
 {
-    //O nimero que será comparado como uma TAG
+    //O numero que será comparado como uma TAG
     [SerializeField]
     private int numero;
     [SerializeField]
