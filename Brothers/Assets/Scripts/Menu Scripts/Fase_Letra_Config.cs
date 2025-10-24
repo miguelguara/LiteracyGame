@@ -1,9 +1,12 @@
 using UnityEngine;
+using UnityEngine.UI;
 public class Fase_Letra_Config : MonoBehaviour
 {
     [SerializeField]
     private GameObject Panel;
-
+    [SerializeField]
+    private InputField inputField;
+    private string Palavra;
     public void Ativar()
     {
         Panel.SetActive(true);
@@ -16,7 +19,8 @@ public class Fase_Letra_Config : MonoBehaviour
     
     public void criar()
     {
-        
+        Palavra = inputField.text.ToUpper();
+        PlayerPrefs.SetString("", Palavra);
     }
 
 }
