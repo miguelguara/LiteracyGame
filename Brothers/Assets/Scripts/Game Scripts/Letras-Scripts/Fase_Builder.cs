@@ -19,6 +19,7 @@ public class Fase_Builder : MonoBehaviour
     void Start()
     {
         soma = 0;
+        Palavra = PlayerPrefs.GetString("Word");
         Construir();
     }
     

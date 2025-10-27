@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class Fase_Letra_Config : MonoBehaviour
 {
@@ -20,7 +21,8 @@ public class Fase_Letra_Config : MonoBehaviour
     public void criar()
     {
         Palavra = inputField.text.ToUpper();
-        PlayerPrefs.SetString("", Palavra);
+        PlayerPrefs.SetString("Word", Palavra);
+        SceneManager.LoadScene("Tela_Inicial");
     }
 
 }
