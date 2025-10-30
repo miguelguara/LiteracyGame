@@ -5,7 +5,7 @@ public class MenuPrincipal : MonoBehaviour
 {
     public Image Logo;
     [SerializeField]
-    private RectTransform Pannel_Levels;
+    private RectTransform Pannel_Levels, Pannel_Numeros;
     //Verifica na memoria se o jogo ja foi aberto
 
     private int aberto;
@@ -39,8 +39,14 @@ public class MenuPrincipal : MonoBehaviour
         PlayerPrefs.SetInt("Jogo-Aberto", aberto);
     }
 
-    public void Sair_do_Jogo() 
+    public void PannelIN_Numeros()
     {
-        Application.Quit();
+        Pannel_Numeros.LeanMoveX(30f, 1f);
+
+    }
+    
+     public void PannelOut_Numeros(){
+        Pannel_Numeros.LeanMoveX(820f, 1f); 
+       
     }
 }

@@ -13,9 +13,13 @@ public class Number_Manager : MonoBehaviour
     [SerializeField]
     RectTransform Vitoria_Panel;
 
+    private int Num_Ini, Num_Fin;
+
     void Start()
     {
         Conter = 0;
+        Num_Ini = PlayerPrefs.GetInt("N_I");
+        Num_Fin = PlayerPrefs.GetInt("N_F");
     }
     public void instanciar()
     {
