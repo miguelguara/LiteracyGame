@@ -11,7 +11,7 @@ public class Botao_Numero : MonoBehaviour
         PlayerPrefs.SetInt("N_I", Numero_Inicial);
         PlayerPrefs.SetInt("N_F", Numero_Final);
         //Carrwega a cena de fases de numeros
-        SceneManager.LoadScene("Fases_Numeros");
+        SceneManager.LoadScene("Numeros");
 
     }
 }

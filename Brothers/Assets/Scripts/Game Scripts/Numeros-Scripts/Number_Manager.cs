@@ -9,7 +9,7 @@ public class Number_Manager : MonoBehaviour
     //Isso vai limitar quantas vezes irá espawnar os numeros!!!!
     [SerializeField]
     private int limit;
-    public GameObject [] Numeros;
+    public GameObject [] Balao_Numeros,Numeros;
     [SerializeField]
     RectTransform Vitoria_Panel;
 
@@ -17,10 +17,15 @@ public class Number_Manager : MonoBehaviour
 
     void Start()
     {
+        //Carregas as informações passadas pelo playerprefs no botão
         Conter = 0;
         Num_Ini = PlayerPrefs.GetInt("N_I");
         Num_Fin = PlayerPrefs.GetInt("N_F");
+        //Instancia os numeros e o balão inicial
+       // criar_numeros();
+        instanciar();
     }
+
     public void instanciar()
     {
         if (Conter <= limit)
@@ -28,7 +33,7 @@ public class Number_Manager : MonoBehaviour
             float x = Random.Range(-9f, 9f);
             float y = Random.Range(-4f, 3f);
             int n = Random.Range(Num_Ini, Num_Fin);
-            Instantiate(Numeros[n], new Vector2(x, y), Quaternion.identity);
+            Instantiate(Balao_Numeros[n], new Vector2(x, y), Quaternion.identity);
             AtualizarUI();
         }
         else
@@ -41,6 +46,16 @@ public class Number_Manager : MonoBehaviour
     {
         Conter++;
         ContadorUI.text = Conter.ToString();
+    }
+
+    void criar_numeros()
+    {
+        for (int i = Num_Ini; i < Num_Fin; i++)
+        {
+         float x = Random.Range(-9f, 9f);
+         float y = Random.Range(-4f, 3f);
+         Instantiate(Numeros[i],new Vector2(x,y), Quaternion.identity);
+        }
     }
 
 }

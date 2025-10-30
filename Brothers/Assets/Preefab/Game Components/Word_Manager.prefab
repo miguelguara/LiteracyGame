@@ -445,7 +445,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6339535760646296699}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -402.44308, y: -189.41805, z: 0.0071183727}
   m_LocalScale: {x: 0.35087723, y: 0.35087723, z: 0.35087723}
   m_ConstrainProportionsScale: 0
@@ -467,6 +467,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Sequencia: 0000
+  Verificar_Button: {fileID: 3713754154604098263}
   Vitoria_Panel: {fileID: 0}
   Fotos:
   - {fileID: 4019288599738441542, guid: 0e6977083b3019244a457626007bcd0d, type: 3}

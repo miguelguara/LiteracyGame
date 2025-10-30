@@ -9,7 +9,7 @@ public class Number_Ballon : MonoBehaviour
     [SerializeField]
     private AudioClip popClip;
 
-    [SerializeField]
+    //Referencia o sprite do numero para ser destruido na animação de explosão do balão
     private GameObject NumberObj;
     private Number_Manager NM;
     private AudioControl AC;

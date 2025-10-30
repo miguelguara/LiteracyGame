@@ -4,7 +4,11 @@ using UnityEngine.UI;
 
 public class Word_manager : MonoBehaviour
 {
+    //A sequencia de booleanas que será preenchida com cada letra inserida
     public bool[] Sequencia;
+
+    [SerializeField]
+    private GameObject Verificar_Button;
     [SerializeField]
     private RectTransform Vitoria_Panel;
     //A foto a ser mostrada na imagem
@@ -24,6 +28,7 @@ public class Word_manager : MonoBehaviour
     private int num;
     private int indexImage;
 
+    //Mudar para uma lista futuramente
     private Check_Letras[] Letras_Erradas;
 
     void Start()
@@ -89,6 +94,7 @@ public class Word_manager : MonoBehaviour
         {
             Vitoria_Panel.LeanMoveY(50f, 0.5f);
             ReturnButton.SetActive(false);
+            Verificar_Button.SetActive(false);
             AC.Tocar_SFX(Yay);
         }
         else

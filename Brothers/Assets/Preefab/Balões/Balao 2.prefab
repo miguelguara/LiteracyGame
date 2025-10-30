@@ -158,7 +158,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numero: 0
-  popClip: {fileID: 0}
+  popClip: {fileID: 8300000, guid: fbe80cef3b73e1143ba06d784fc5f512, type: 3}
   NumberObj: {fileID: 0}
 --- !u!58 &6645646438306222332
 CircleCollider2D:
