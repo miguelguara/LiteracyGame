@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7075997194199341156}
   m_Layer: 0
   m_Name: Case_Letra A
-  m_TagString: Untagged
+  m_TagString: CheckBox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27,9 +27,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9069972457770789431}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -8.74991, y: -0.3244663, z: 9.96264}
-  m_LocalScale: {x: 0.4406876, y: 0.38946375, z: 0.3871794}
+  m_LocalScale: {x: 0.6, y: 0.5302583, z: 0.5271481}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -68,17 +68,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.020664215, y: -0.009948015}
+  m_Offset: {x: -0.02066493, y: -0.046536922}
   m_SpriteTilingProperty:
-    border: {x: 0.099999994, y: 0.13, z: 0.11, w: 0.16}
+    border: {x: 0.071428575, y: 0.092857145, z: 0.07857143, w: 0.114285715}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.33, y: 5.39}
+    oldSize: {x: 3.807143, y: 3.85}
     newSize: {x: 5.33, y: 5.39}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 5.310109, y: 5.3938203}
+  m_Size: {x: 4.275371, y: 4.149806}
   m_EdgeRadius: 0
 --- !u!114 &5225750745197961016
 MonoBehaviour:

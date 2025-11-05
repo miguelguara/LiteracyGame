@@ -1,11 +1,16 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Word_manager : MonoBehaviour
 {
+
+    public static Word_manager instance;
     //A sequencia de booleanas que será preenchida com cada letra inserida
     public bool[] Sequencia;
+
+    private string Palavra;
 
     [SerializeField]
     private GameObject Verificar_Button;
@@ -24,25 +29,34 @@ public class Word_manager : MonoBehaviour
     //Vai mostrar a foto do objeto da palavra
     public Image Imagem_Exemplo;
 
-    //Vai receber o numero do playerPrefs
-    private int num;
+
     private int indexImage;
 
     //Mudar para uma lista futuramente
-    private Check_Letras[] Letras_Erradas;
+    [HideInInspector]
+    public List<Check_Letras> Letras_Erradas = new List<Check_Letras>();
 
+
+    void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+    }
     void Start()
     {
-        num = PlayerPrefs.GetInt("QTD_Letras");
+
+        Palavra = PlayerPrefs.GetString("Word");
         indexImage = PlayerPrefs.GetInt("IDX_Imagem");
 
         AC = Object.FindFirstObjectByType<AudioControl>();
         ReturnButton = Object.FindFirstObjectByType<Return_Script>().gameObject;
         Vitoria_Panel = GameObject.Find("Parabens").GetComponent<RectTransform>();
 
-        Letras_Erradas = FindObjectsOfType<Check_Letras>();
+       
 
-        Sequencia = new bool[num];
+        Sequencia = new bool[Palavra.Length];
         Imagem_Exemplo.sprite = Fotos[indexImage];
 
         for (int i = 0; i < Sequencia.Length; i++)
@@ -100,13 +114,18 @@ public class Word_manager : MonoBehaviour
         else
         {
             AC.Tocar_SFX(Tente_Denovo);
-            for (int i = 0; i < Letras_Erradas.Length; i++)
+            for (int i = 0; i < Letras_Erradas.Count; i++)
             {
                 Letras_Erradas[i].expulsar_Letra();
             }
         }
     }
+    
 
+    public void Adicionar_CheckBox(Check_Letras obj)
+    {
+        Letras_Erradas.Add(obj);
+    }
     /*IEnumerator Correto()
     {   
         Vitoria_Panel.LeanMoveY(50f, 0.5f);

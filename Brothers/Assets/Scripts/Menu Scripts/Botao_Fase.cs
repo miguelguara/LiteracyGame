@@ -4,18 +4,16 @@ using UnityEngine.SceneManagement;
 public class Botao_Fase : MonoBehaviour
 {
     [SerializeField]
-    private int Numero_de_Letras;
+    private string Palavra;
     [SerializeField]
     private int Numero_imagem;
 
-    [SerializeField]
-    private int Index_Fase;
 
     public void Carregar_Fase() 
     {
         //Salva a quantidade de letras na palavra
-        PlayerPrefs.SetInt("QTD_Letras",Numero_de_Letras);
+        PlayerPrefs.SetString("Word", Palavra.ToUpper());
         PlayerPrefs.SetInt("IDX_Imagem",Numero_imagem);
-        SceneManager.LoadScene(Index_Fase);
+        SceneManager.LoadScene("Fase");
     }
 }
