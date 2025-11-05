@@ -95,7 +95,7 @@ public class Fase_Builder : MonoBehaviour
         distancia -= 0.35f;
         soma = 0;
         scale_box -= 0.085f;
-        scale_letra -=0.18f;
+        scale_letra -=0.10f;
 
         Construir();
     }
