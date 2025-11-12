@@ -12,7 +12,7 @@ public class MenuPrincipal : MonoBehaviour
     public void Awake()
     {
         //faz a logo mudar de escala parecendo uma animacao
-        Logo.gameObject.LeanScale(new Vector3(1f,1f),0.45f).setLoopPingPong();
+        Logo.gameObject.LeanScale(new Vector3(1f, 1f), 0.45f).setLoopPingPong();
         aberto = PlayerPrefs.GetInt("Jogo-Aberto");
         if (aberto == 1)
         {

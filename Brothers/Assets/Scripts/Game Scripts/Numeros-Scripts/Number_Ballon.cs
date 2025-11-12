@@ -31,7 +31,7 @@ public class Number_Ballon : MonoBehaviour
             NM.instanciar();
             AC.Tocar_SFX(popClip);
             Destroy(NumberObj);
-            Destroy(this.gameObject, 0.3f);
+            Destroy(this.gameObject, 0.25f);
         }
     }
 }

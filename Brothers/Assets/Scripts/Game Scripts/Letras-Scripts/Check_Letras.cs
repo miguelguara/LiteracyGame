@@ -10,7 +10,7 @@ public class Check_Letras : MonoBehaviour
 
     private void Start()
     {
-        WM = FindObjectOfType<Word_manager>();
+        WM = Object.FindFirstObjectByType<Word_manager>();
     }
 
     private void OnTriggerEnter2D(Collider2D col)
