@@ -3,7 +3,6 @@ using UnityEngine;
 public class MusicControl : MonoBehaviour
 {
     private static MusicControl instance; 
-
     private AudioSource Music_AS;
 
     [SerializeField]

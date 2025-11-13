@@ -2,6 +2,8 @@ using UnityEngine;
 using TMPro;
 public class Number_Manager : MonoBehaviour
 {
+
+    public static Number_Manager instance;
     private int Conter;
 
     [SerializeField]
@@ -15,6 +17,14 @@ public class Number_Manager : MonoBehaviour
 
     private int Num_Ini, Num_Fin;
 
+    //Serve para pausar o Timer!
+    [HideInInspector]
+    public bool finalizado;
+
+    void Awake()
+    {
+        instance = this;
+    }
     void Start()
     {
         //Carregas as informações passadas pelo playerprefs no botão

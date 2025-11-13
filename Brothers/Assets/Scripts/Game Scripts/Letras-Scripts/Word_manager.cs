@@ -5,9 +5,7 @@ using UnityEngine.UI;
 
 public class Word_manager : MonoBehaviour
 {
-
     public static Word_manager instance;
-
     public bool Correto;
     //A sequencia de booleanas que será preenchida com cada letra inserida
     public bool[] Sequencia;
@@ -106,6 +104,7 @@ public class Word_manager : MonoBehaviour
         if (Correto)
         {
             Vitoria_Panel.LeanMoveY(50f, 0.5f);
+            Parabens.instance.PreencherStar();
             ReturnButton.SetActive(false);
             Verificar_Button.SetActive(false);
             AC.Tocar_SFX(Yay);

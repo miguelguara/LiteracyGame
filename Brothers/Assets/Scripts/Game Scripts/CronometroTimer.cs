@@ -1,11 +1,9 @@
 using UnityEngine;
 using TMPro;
-using System;
 
-public class Timer : MonoBehaviour
+public class CronometroTimer : MonoBehaviour
 {
-
-    [SerializeField]
+      [SerializeField]
     private TextMeshProUGUI TimerTxt;
     private float time;
 
@@ -13,7 +11,7 @@ public class Timer : MonoBehaviour
     [HideInInspector]
     public int Sec,Min;
 
- public static Timer instance;
+    public static CronometroTimer instance;
 
     void Awake()
     {
@@ -22,7 +20,7 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(!Word_manager.instance.Correto)
+        if(!Word_manager.instance.Correto||!Number_Manager.instance.finalizado)
         {
         time+= Time.deltaTime;
         Sec = Mathf.FloorToInt(time % 60);

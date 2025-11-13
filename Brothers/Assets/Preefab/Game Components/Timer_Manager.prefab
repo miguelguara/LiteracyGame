@@ -145,7 +145,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3333561071689650014}
-  - component: {fileID: 3215217353164653174}
+  - component: {fileID: 6036824468843954169}
   m_Layer: 5
   m_Name: Timer_Manager
   m_TagString: Untagged
@@ -173,7 +173,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &3215217353164653174
+--- !u!114 &6036824468843954169
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -182,7 +182,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8490489916680594564}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7fa9ef8d082f8543bf7a32e55d8708a, type: 3}
+  m_Script: {fileID: 11500000, guid: 986928d54d5249c4e8c0e0ffc7d8630a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   TimerTxt: {fileID: 9080002156127281150}

@@ -6,7 +6,6 @@ public class Return_Script : MonoBehaviour
     [SerializeField]
     private GameObject BG_Retorno;
     
-
     public void AtivarMenu()
     {
         BG_Retorno.SetActive(true);
