@@ -7,6 +7,8 @@ public class Word_manager : MonoBehaviour
 {
 
     public static Word_manager instance;
+
+    public bool Correto;
     //A sequencia de booleanas que será preenchida com cada letra inserida
     public bool[] Sequencia;
 
@@ -29,13 +31,10 @@ public class Word_manager : MonoBehaviour
     //Vai mostrar a foto do objeto da palavra
     public Image Imagem_Exemplo;
 
-
     private int indexImage;
 
-    //Mudar para uma lista futuramente
     [HideInInspector]
     public List<Check_Letras> Letras_Erradas = new List<Check_Letras>();
-
 
     void Awake()
     {
@@ -103,7 +102,7 @@ public class Word_manager : MonoBehaviour
 
     public void Verificacao()
     {
-        bool Correto = Checagem();
+         Correto = Checagem();
         if (Correto)
         {
             Vitoria_Panel.LeanMoveY(50f, 0.5f);
