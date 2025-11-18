@@ -35,7 +35,7 @@ public class CronometroTimer : MonoBehaviour
         {
             return 3;
         }
-        else if(time>70&&time<120)
+        else if(time>40&&time<120)
         {
             return 2;
         }
