@@ -103,8 +103,15 @@ public class Word_manager : MonoBehaviour
          Correto = Checagem();
         if (Correto)
         {
+            //desce o painel de vitoria e preenche os campos das estrelas
             Vitoria_Panel.LeanMoveY(50f, 0.5f);
             Parabens.instance.PreencherStar();
+            
+            //pega a pontuação atual que o aluno tirou e passa para uma variavel int
+            int p = CronometroTimer.instance.Pontuacao();
+            Atribuidor_Points.instance.pontos(p);
+
+            //desativa os botoes de verificação e retorno;
             ReturnButton.SetActive(false);
             Verificar_Button.SetActive(false);
             AC.Tocar_SFX(Yay);
@@ -118,8 +125,9 @@ public class Word_manager : MonoBehaviour
             }
         }
     }
-    
 
+
+    //Função chamada pelo fasebuilder
     public void Adicionar_CheckBox(Check_Letras obj)
     {
         Letras_Erradas.Add(obj);

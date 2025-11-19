@@ -20,7 +20,7 @@ public class CronometroTimer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(!Word_manager.instance.Correto||!Number_Manager.instance.finalizado)
+        if(!Word_manager.instance.Correto)
         {
         time+= Time.deltaTime;
         Sec = Mathf.FloorToInt(time % 60);

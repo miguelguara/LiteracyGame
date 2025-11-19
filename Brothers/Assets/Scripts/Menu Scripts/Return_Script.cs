@@ -13,6 +13,7 @@ public class Return_Script : MonoBehaviour
 
     public void Retornar_TelaSelecao() 
     {
+        Atribuidor_Points.instance.pontos(0);
         SceneManager.LoadScene("Menu");
     }
 

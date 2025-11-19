@@ -5,14 +5,14 @@ public class AudioControl : MonoBehaviour
 {   
     private AudioSource AS;
 
-    private AudioControl instance;
+    private static AudioControl instance;
 
     void Awake()
     {
         if (instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(this.gameObject);
+            DontDestroyOnLoad(instance);
         }
         else
         {
