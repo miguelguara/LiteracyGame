@@ -25,9 +25,10 @@ public class Word_manager : MonoBehaviour
     [SerializeField]
     private AudioClip Yay, Tente_Denovo;
 
-    private AudioControl AC;
     //Vai mostrar a foto do objeto da palavra
     public Image Imagem_Exemplo;
+
+    private AudioControl AC;
 
     private int indexImage;
 
@@ -47,7 +48,8 @@ public class Word_manager : MonoBehaviour
         Palavra = PlayerPrefs.GetString("Word");
         indexImage = PlayerPrefs.GetInt("IDX_Imagem");
 
-        AC = Object.FindFirstObjectByType<AudioControl>();
+        AC = FindObjectOfType<AudioControl>();
+
         ReturnButton = Object.FindFirstObjectByType<Return_Script>().gameObject;
         Vitoria_Panel = GameObject.Find("Parabens").GetComponent<RectTransform>();
 
@@ -112,9 +114,10 @@ public class Word_manager : MonoBehaviour
             Atribuidor_Points.instance.pontos(p);
 
             //desativa os botoes de verificação e retorno;
+            AC.Tocar_SFX(Yay);
             ReturnButton.SetActive(false);
             Verificar_Button.SetActive(false);
-            AC.Tocar_SFX(Yay);
+            
         }
         else
         {
