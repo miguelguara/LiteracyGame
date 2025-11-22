@@ -5,7 +5,7 @@ public class AudioControl : MonoBehaviour
 {   
     private AudioSource AS;
 
-    private static AudioControl instance;
+    public static AudioControl instance;
 
     void Awake()
     {
