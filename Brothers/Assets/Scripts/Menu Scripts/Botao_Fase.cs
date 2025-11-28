@@ -22,6 +22,16 @@ public class Botao_Fase : MonoBehaviour
         for (int i = 0;i<pontos;i++)
         {
             estrelas[i].SetActive(true);
+            pontosAtual = pontos;
+        } 
+    }
+
+    public void CarregarP(int pontos)
+    {
+        pontosAtual = pontos;
+        for (int i = 0;i<pontosAtual;i++)
+        {
+            estrelas[i].SetActive(true);
         } 
     }
     

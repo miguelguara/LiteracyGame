@@ -382,6 +382,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54161f17a00b5144ead8f280b1219e1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ID: 0
   Numero_Inicial: 2
   Numero_Final: 10
 --- !u!1001 &184250204
@@ -1147,7 +1148,7 @@ GameObject:
   - component: {fileID: 503152235}
   - component: {fileID: 503152236}
   m_Layer: 5
-  m_Name: Content
+  m_Name: Content_Num
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1308,7 +1309,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 7, y: -99}
+  m_AnchoredPosition: {x: 7, y: -103}
   m_SizeDelta: {x: 142.8, y: 51.5282}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &730258957
@@ -4342,7 +4343,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 7, y: -35}
+  m_AnchoredPosition: {x: 7, y: -42}
   m_SizeDelta: {x: 142.8, y: 51.5282}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1736789011
@@ -5620,7 +5621,7 @@ GameObject:
   - component: {fileID: 2082004450}
   - component: {fileID: 2082004451}
   m_Layer: 5
-  m_Name: Content
+  m_Name: Content_Letras
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
