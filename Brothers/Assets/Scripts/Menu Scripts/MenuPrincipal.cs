@@ -14,9 +14,15 @@ public class MenuPrincipal : MonoBehaviour
         //faz a logo mudar de escala parecendo uma animacao
         Logo.gameObject.LeanScale(new Vector3(1f, 1f), 0.45f).setLoopPingPong();
         aberto = PlayerPrefs.GetInt("Jogo-Aberto");
-        if (aberto == 1)
+        //Verifica qual jogo o player abriu por ultimo
+        switch (aberto)
         {
+            case 1:
             PannelIN();
+            break;
+            case 2:
+            PannelIN_Numeros();
+            break;
         }
 
     }
@@ -42,7 +48,8 @@ public class MenuPrincipal : MonoBehaviour
     public void PannelIN_Numeros()
     {
         Pannel_Numeros.LeanMoveX(30f, 1f);
-
+        aberto = 2;
+        PlayerPrefs.SetInt("Jogo-Aberto", aberto);
     }
     
      public void PannelOut_Numeros(){

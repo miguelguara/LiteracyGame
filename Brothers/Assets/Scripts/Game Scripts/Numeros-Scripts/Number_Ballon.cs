@@ -28,7 +28,9 @@ public class Number_Ballon : MonoBehaviour
         {
             // c.gameObject.GetComponent<Number>().som_Numero();
             anim.SetBool("Pop", true);
+            //Instancia um novo balão e atualiza o contador
             NM.instanciar();
+            NM.AtualizarUI();
             AC.Tocar_SFX(popClip);
             Destroy(NumberObj);
             Destroy(this.gameObject, 0.25f);

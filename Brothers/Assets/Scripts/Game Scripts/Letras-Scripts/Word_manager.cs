@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 public class Word_manager : MonoBehaviour
@@ -28,6 +29,7 @@ public class Word_manager : MonoBehaviour
     //Vai mostrar a foto do objeto da palavra
     public Image Imagem_Exemplo;
 
+
     private int indexImage;
 
     [HideInInspector]
@@ -41,7 +43,7 @@ public class Word_manager : MonoBehaviour
         }
     }
     void Start()
-    {
+    {   
 
         Palavra = PlayerPrefs.GetString("Word");
         indexImage = PlayerPrefs.GetInt("IDX_Imagem");

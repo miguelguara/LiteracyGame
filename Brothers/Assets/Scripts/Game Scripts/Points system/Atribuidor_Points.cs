@@ -11,11 +11,16 @@ public class Atribuidor_Points : MonoBehaviour
 
 // Vai procurar os botõesF
   private Botao_Fase[] btsF;
+
+  private Botao_Numero[] btsN;
   private int pontuacao;
   public static Atribuidor_Points instance;
 
-  //Transform responsável por agruar o botões
+  //Transform responsável por agrupar o botões
+  [SerializeField]
   private Transform btsTrasnform;
+  [SerializeField]
+  private Transform btsNTransform;
 
     void Awake()
     {
@@ -33,21 +38,26 @@ public class Atribuidor_Points : MonoBehaviour
     }
     void Start()
     {
+        btsTrasnform = GameObject.Find("Content_Letras").transform;
+        btsNTransform = GameObject.Find("Content_Num").transform;
         btsF = btsTrasnform.GetComponentsInChildren<Botao_Fase>();
+        btsN = btsNTransform.GetComponentsInChildren<Botao_Numero>();
         Load();
     }
 
     void OnSceneLoaded(Scene cena, LoadSceneMode mode)
     {
-        btsTrasnform = GameObject.Find("Content_Letras").transform;
+        
         if (cena.name == "Menu")
         {
+            btsTrasnform = GameObject.Find("Content_Letras").transform;
+            btsNTransform = GameObject.Find("Content_Num").transform;
             btsF = btsTrasnform.GetComponentsInChildren<Botao_Fase>();
-
+            btsN = btsNTransform.GetComponentsInChildren<Botao_Numero>();
             Load();
 
-            // Quando voltar ao menu, aplicar os pontos
-            foreach (Botao_Fase b in btsF)
+
+             foreach (Botao_Fase b in btsF)
             {
                 if (b.ID == ID_botaoF)
                 {
@@ -56,7 +66,18 @@ public class Atribuidor_Points : MonoBehaviour
                     Save();
                     break;
                 }
-            }
+            } 
+             foreach (Botao_Numero b in btsN)
+            {
+                if (b.ID == ID_botaoN)
+                {
+                    b.Atribuir(pontuacao);
+                    ID_botaoN = 0;
+                    Save();
+                    break;
+                }
+            } 
+             
         }
     }
 
@@ -75,17 +96,19 @@ public class Atribuidor_Points : MonoBehaviour
         ID_botaoN = b;        
     }
 
-    //Depois atribuir o valor do jogo dos balões
     //Regioes responsáveis por salvar os pontos do jogo:
     public void Save()
     {
         PontosSalvos p = new PontosSalvos();
         p.pontuacaoLetras = new List<int>();
+        p.pontuacaoNum = new List<int>();
 
     // Salva todos os botões
     for (int i = 0; i < btsF.Length; i++)
         p.pontuacaoLetras.Add(btsF[i].pontosAtual);
     
+    for (int i = 0; i < btsN.Length; i++)
+        p.pontuacaoNum.Add(btsN[i].pontosAtual);
 
     //strings de path e do arquivo Json
     string path = Path.Combine(Application.persistentDataPath, "Dados.json");
@@ -97,10 +120,17 @@ public class Atribuidor_Points : MonoBehaviour
     }
 
 
+
 public void Load()
 {
     string path = Path.Combine(Application.persistentDataPath, "Dados.json");
 
+
+    if (!File.Exists(path))
+    {
+        Debug.LogWarning("Arquivo de dados não encontrado em: " + path);
+        return;
+    }
     string json = File.ReadAllText(path);
     PontosSalvos p = JsonUtility.FromJson<PontosSalvos>(json);
 
@@ -109,6 +139,13 @@ public void Load()
         btsF[i].pontosAtual = p.pontuacaoLetras[i];
         btsF[i].CarregarP(p.pontuacaoLetras[i]);
     }
+
+     for (int i = 0; i < btsN.Length -1; i++)
+    {
+        btsN[i].pontosAtual = p.pontuacaoNum[i];
+        btsN[i].CarregaP(p.pontuacaoNum[i]);
+    }
+
 }
 
 }
@@ -117,6 +154,6 @@ public void Load()
 public class PontosSalvos
 {
     public List<int> pontuacaoLetras;
-    //public List<int> pontuacaoNum;
+    public List<int> pontuacaoNum;
 }
 
