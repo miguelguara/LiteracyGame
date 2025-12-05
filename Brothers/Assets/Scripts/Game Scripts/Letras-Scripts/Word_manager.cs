@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
@@ -44,16 +45,17 @@ public class Word_manager : MonoBehaviour
     }
     void Start()
     {   
-
+        //pega a palavra definida pelo botão do Menu
         Palavra = PlayerPrefs.GetString("Word");
+        int _quantidadeLetras = Palavra.Count(char.IsLetter);
+
         indexImage = PlayerPrefs.GetInt("IDX_Imagem");
 
         ReturnButton = Object.FindFirstObjectByType<Return_Script>().gameObject;
         Vitoria_Panel = GameObject.Find("Parabens").GetComponent<RectTransform>();
 
-       
-
-        Sequencia = new bool[Palavra.Length];
+        //atribui no primeiro frame a quantidade de letras
+        Sequencia = new bool[_quantidadeLetras];
         Imagem_Exemplo.sprite = Fotos[indexImage];
 
         for (int i = 0; i < Sequencia.Length; i++)

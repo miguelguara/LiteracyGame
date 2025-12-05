@@ -66,6 +66,7 @@ public class Fase_Builder : MonoBehaviour
                     //instancia as caixas de checagem
                     Vector3 pos = new Vector3(posicao_Inicial.position.x + soma, posicao_Inicial.position.y);
                     var CBO = Instantiate(Boxes[i].gameObject, pos, Quaternion.identity);
+                    
                     instance.Adicionar_CheckBox(CBO.gameObject.GetComponent<Check_Letras>());
                     CBO.gameObject.transform.localScale = new Vector3(scale_box, scale_box, scale_box);
                     listboxes.Add(CBO);
@@ -91,11 +92,12 @@ public class Fase_Builder : MonoBehaviour
         listboxes.Clear();
         listletras.Clear();
         instance.Letras_Erradas.Clear();
+
         //redução de escalas e distancias
         distancia -= 0.35f;
         soma = 0;
         scale_box -= 0.085f;
-        scale_letra -=0.10f;
+        scale_letra -=0.18f;
 
         Construir();
     }
