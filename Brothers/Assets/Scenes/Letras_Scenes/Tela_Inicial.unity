@@ -503,6 +503,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 2099794561}
+  tex: {fileID: 0}
+  abrirGaleriaButton: {fileID: 0}
 --- !u!1001 &739597009
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -821,8 +823,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 302.5, y: -61.2}
-  m_SizeDelta: {x: 136.1029, y: 30}
+  m_AnchoredPosition: {x: 302.4, y: -68.5}
+  m_SizeDelta: {x: 129.4955, y: 55.7603}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1246284764
 MonoBehaviour:
@@ -867,19 +869,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1246284765}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 585291619}
-        m_TargetAssemblyTypeName: Abridor_Galeria, Assembly-CSharp
-        m_MethodName: AbrirGaleria
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1246284765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -900,7 +890,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: 62d4827304f2d804aa4e4a3c05bd1a26, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1219,6 +1209,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2078510881}
     m_Modifications:
+    - target: {fileID: 4987007945843752594, guid: 4cfc78ff03b538d4e87ce029a72accbf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6339535760646296699, guid: 4cfc78ff03b538d4e87ce029a72accbf, type: 3}
       propertyPath: m_Name
       value: Word_Manager
