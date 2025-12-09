@@ -43,10 +43,12 @@ public class Abridor_Galeria : MonoBehaviour
             {
          imageTransform = GameObject.Find("ImageBG").transform;     
          image = imageTransform.Find("Word_Image").GetComponent<Image>();
-         image.gameObject.SetActive(true);
+         Debug.Log("Rodei dnv");
+         image.sprite = null;
          //Cria um sprite a partir da textura carregada e atribui para a imagem da UI
          Sprite sp = Sprite.Create(tex, new Rect(0f,0f,tex.width,tex.height), new Vector2(0.5f,0.5f));
-         image.sprite = sp;  
+         image.sprite = sp;
+         image.gameObject.SetActive(true);
             }
         }
     }

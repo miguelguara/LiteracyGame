@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Word_manager : MonoBehaviour
@@ -56,8 +57,11 @@ public class Word_manager : MonoBehaviour
 
         //atribui no primeiro frame a quantidade de letras
         Sequencia = new bool[_quantidadeLetras];
-        Imagem_Exemplo.sprite = Fotos[indexImage];
 
+        if (SceneManager.GetActiveScene().name!= "Tela_Inicial") 
+            Imagem_Exemplo.sprite = Fotos[indexImage];
+        
+       
         for (int i = 0; i < Sequencia.Length; i++)
         {
             Sequencia[i] = false;

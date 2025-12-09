@@ -24,6 +24,11 @@ public class Number_Manager : MonoBehaviour
     [HideInInspector]
     public bool finalizado;
 
+    [SerializeField]
+    public void Adicionar(int n) 
+    {
+        Conter += n;
+    }
     void Awake()
     {
         instance = this;
