@@ -14,6 +14,7 @@ public class Number_Manager : MonoBehaviour
     //Isso vai limitar quantas vezes irá espawnar os numeros!!!!
     [SerializeField]
     private int limit;
+    //spaw preefabs
     public GameObject [] Balao_Numeros,Numeros;
     [SerializeField]
     RectTransform Vitoria_Panel;
@@ -44,6 +45,7 @@ public class Number_Manager : MonoBehaviour
        // criar_numeros();
         instanciar();
     }
+
 
     public void instanciar()
     {

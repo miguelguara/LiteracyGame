@@ -21,7 +21,7 @@ public class Number_Ballon : MonoBehaviour
         AC = Object.FindFirstObjectByType<AudioControl>();
         NumberObj = transform.GetChild(0).gameObject;
     }
-
+   
     void OnCollisionEnter2D(Collision2D c)
     {
         if (c.gameObject.GetComponent<Number>().numero == numero)

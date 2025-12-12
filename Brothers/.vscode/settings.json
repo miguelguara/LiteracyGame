@@ -56,5 +56,6 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Brothers.sln"
+    "dotnet.defaultSolution": "Brothers.sln",
+    "dotnet.preferCSharpExtension": true
 }
