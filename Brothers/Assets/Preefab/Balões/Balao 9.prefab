@@ -157,9 +157,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0af584f455457b4bb7f3f24912694f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numero: 0
+  numero: 9
   popClip: {fileID: 8300000, guid: fbe80cef3b73e1143ba06d784fc5f512, type: 3}
-  NumberObj: {fileID: 0}
 --- !u!58 &6651481072476810932
 CircleCollider2D:
   m_ObjectHideFlags: 0

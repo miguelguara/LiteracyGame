@@ -25,7 +25,6 @@ public class Number_Manager : MonoBehaviour
     [HideInInspector]
     public bool finalizado;
 
-    [SerializeField]
     public void Adicionar(int n) 
     {
         Conter += n;
@@ -60,13 +59,14 @@ public class Number_Manager : MonoBehaviour
         {
           AudioControl.instance.Tocar_SFX(Yay);
           finalizado =  true;
+
           if (finalizado)
             {
           Vitoria_Panel.LeanMoveY(50f, 0.5f);  
           Parabens.instance.PreencherStar();
           int p = CronometroTimer.instance.Pontuacao();
           Atribuidor_Points.instance.pontos(p);
-        } 
+           } 
         }
     }
 
