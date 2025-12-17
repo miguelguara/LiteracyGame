@@ -38,6 +38,7 @@ public class Atribuidor_Points : MonoBehaviour
     }
     void Start()
     {
+        //Encontra o transform do objeto pai dos botões
         btsTrasnform = GameObject.Find("Content_Letras").transform;
         btsNTransform = GameObject.Find("Content_Num").transform;
         btsF = btsTrasnform.GetComponentsInChildren<Botao_Fase>();
@@ -99,6 +100,7 @@ public class Atribuidor_Points : MonoBehaviour
     //Regioes responsáveis por salvar os pontos do jogo:
     public void Save()
     {
+        //instancia o objeto que será trasformado em Json
         PontosSalvos p = new PontosSalvos();
         p.pontuacaoLetras = new List<int>();
         p.pontuacaoNum = new List<int>();
