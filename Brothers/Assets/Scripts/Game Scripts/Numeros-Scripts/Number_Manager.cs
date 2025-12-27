@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using System.Collections;
 public class Number_Manager : MonoBehaviour
 {
 
@@ -40,13 +41,23 @@ public class Number_Manager : MonoBehaviour
         Num_Ini = PlayerPrefs.GetInt("N_I");
         Num_Fin = PlayerPrefs.GetInt("N_F");
 
+
         //Instancia os numeros e o balão inicial
-       // criar_numeros();
-        instanciar();
+        criar_numeros();
+        Instanciar();
+
+        
     }
 
+    public void Instanciar()
+    {
+        float x = Random.Range(-9f, 9f);
+        float y = Random.Range(-4f, 3f);
+        int n = Random.Range(Num_Ini, Num_Fin-1);
+        Instantiate(Balao_Numeros[n], new Vector2(x, y), Quaternion.identity);
+    }
 
-    public void instanciar()
+    public void Prox_Num()
     {
         if (Conter < limit)
         {
@@ -54,18 +65,14 @@ public class Number_Manager : MonoBehaviour
             float y = Random.Range(-4f, 3f);
             int n = Random.Range(Num_Ini, Num_Fin-1);
             Instantiate(Balao_Numeros[n], new Vector2(x, y), Quaternion.identity);
+            AtualizarUI();
         }
         else
         {
-          AudioControl.instance.Tocar_SFX(Yay);
           finalizado =  true;
-
           if (finalizado)
             {
-          Vitoria_Panel.LeanMoveY(50f, 0.5f);  
-          Parabens.instance.PreencherStar();
-          int p = CronometroTimer.instance.Pontuacao();
-          Atribuidor_Points.instance.pontos(p);
+          StartCoroutine(Vitoria());
            } 
         }
     }
@@ -84,6 +91,16 @@ public class Number_Manager : MonoBehaviour
          float y = Random.Range(-4f, 3f);
          Instantiate(Numeros[i],new Vector2(x,y), Quaternion.identity);
         }
+    }
+
+    IEnumerator Vitoria()
+    {
+          Parabens.instance.PreencherStar();
+          int p = CronometroTimer.instance.Pontuacao();
+          Atribuidor_Points.instance.pontos(p);
+          yield return new WaitForSeconds(AudioControl.instance.AS.clip.length); 
+          AudioControl.instance.Tocar_SFX(Yay);
+          Vitoria_Panel.LeanMoveY(50f, 0.5f);   
     }
 
 }

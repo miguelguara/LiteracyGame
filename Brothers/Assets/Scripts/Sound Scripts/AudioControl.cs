@@ -3,7 +3,8 @@ using UnityEngine.Audio;
 
 public class AudioControl : MonoBehaviour
 {   
-    private AudioSource AS;
+    [HideInInspector]
+    public AudioSource AS;
 
     public static AudioControl instance;
 

@@ -1,3 +1,4 @@
+using System.Collections;
 using Unity.Mathematics;
 using UnityEngine;
 
@@ -26,14 +27,20 @@ public class Number_Ballon : MonoBehaviour
     {
         if (c.gameObject.GetComponent<Number>().numero == numero)
         {
-            // c.gameObject.GetComponent<Number>().som_Numero();
+            StartCoroutine(Estourar(c));
+        }
+    }
+
+    IEnumerator Estourar(Collision2D c)
+    {
             anim.SetBool("Pop", true);
             //Instancia um novo balão e atualiza o contador
-            NM.instanciar();
+            NM.Prox_Num();
             NM.AtualizarUI();
             AC.Tocar_SFX(popClip);
+            yield return new WaitForSeconds(0.3f);
+            c.gameObject.GetComponent<Number>().som_Numero();
             Destroy(NumberObj);
             Destroy(this.gameObject, 0.25f);
-        }
     }
 }
