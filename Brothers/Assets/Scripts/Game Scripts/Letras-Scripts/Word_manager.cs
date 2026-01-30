@@ -139,6 +139,7 @@ public class Word_manager : MonoBehaviour
     {
         Letras_Erradas.Add(obj);
     }
+    
     /*IEnumerator Correto()
     {   
         Vitoria_Panel.LeanMoveY(50f, 0.5f);

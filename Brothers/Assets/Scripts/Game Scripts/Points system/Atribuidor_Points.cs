@@ -142,7 +142,7 @@ public void Load()
         btsF[i].CarregarP(p.pontuacaoLetras[i]);
     }
 
-     for (int i = 0; i < btsN.Length -1; i++)
+     for (int i = 0; i < btsN.Length; i++)
     {
         btsN[i].pontosAtual = p.pontuacaoNum[i];
         btsN[i].CarregaP(p.pontuacaoNum[i]);

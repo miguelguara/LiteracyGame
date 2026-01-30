@@ -24,7 +24,6 @@ public class MenuPrincipal : MonoBehaviour
             PannelIN_Numeros();
             break;
         }
-
     }
     
     public void PannelIN()
@@ -53,7 +52,6 @@ public class MenuPrincipal : MonoBehaviour
     }
     
      public void PannelOut_Numeros(){
-        Pannel_Numeros.LeanMoveX(820f, 1f); 
-       
+        Pannel_Numeros.LeanMoveX(820f, 1f);    
     }
 }

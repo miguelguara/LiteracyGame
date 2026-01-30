@@ -44,9 +44,7 @@ public class Number_Manager : MonoBehaviour
 
         //Instancia os numeros e o balão inicial
         criar_numeros();
-        Instanciar();
-
-        
+        Instanciar();  
     }
 
     public void Instanciar()
@@ -72,7 +70,7 @@ public class Number_Manager : MonoBehaviour
           finalizado =  true;
           if (finalizado)
             {
-          StartCoroutine(Vitoria());
+            StartCoroutine(Vitoria());
            } 
         }
     }
@@ -98,7 +96,7 @@ public class Number_Manager : MonoBehaviour
           Parabens.instance.PreencherStar();
           int p = CronometroTimer.instance.Pontuacao();
           Atribuidor_Points.instance.pontos(p);
-          yield return new WaitForSeconds(AudioControl.instance.AS.clip.length); 
+          yield return new WaitForSeconds(0.36f); 
           AudioControl.instance.Tocar_SFX(Yay);
           Vitoria_Panel.LeanMoveY(50f, 0.5f);   
     }

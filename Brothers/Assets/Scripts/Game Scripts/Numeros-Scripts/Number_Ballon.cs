@@ -36,7 +36,6 @@ public class Number_Ballon : MonoBehaviour
             anim.SetBool("Pop", true);
             //Instancia um novo balão e atualiza o contador
             NM.Prox_Num();
-            NM.AtualizarUI();
             AC.Tocar_SFX(popClip);
             yield return new WaitForSeconds(0.3f);
             c.gameObject.GetComponent<Number>().som_Numero();
