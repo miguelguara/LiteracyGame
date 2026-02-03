@@ -1,11 +1,14 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 public class MenuPrincipal : MonoBehaviour
 {
     public Image Logo;
+    //Fica responsável por mover a camera
+    [SerializeField] private Transform Cam;
     [SerializeField]
-    private RectTransform Pannel_Levels, Pannel_Numeros;
+    private RectTransform Pannel_Levels, Pannel_Numeros,TemaPrincipal,Lojinha;
     //Verifica na memoria se o jogo ja foi aberto
 
     private int aberto;
@@ -25,7 +28,20 @@ public class MenuPrincipal : MonoBehaviour
             break;
         }
     }
-    
+
+    void Update()
+    {
+        if(Mouse.current.leftButton.wasPressedThisFrame)
+        {
+            Abrir_Loja();
+        }
+          if(Mouse.current.rightButton.wasPressedThisFrame)
+        {
+            Fechar_Loja();
+        }
+    }
+
+
     public void PannelIN()
     {
         Pannel_Levels.LeanMoveX(30f, 1f);
@@ -53,5 +69,19 @@ public class MenuPrincipal : MonoBehaviour
     
      public void PannelOut_Numeros(){
         Pannel_Numeros.LeanMoveX(820f, 1f);    
+    }
+
+    public void Abrir_Loja()
+    {
+        TemaPrincipal.LeanMoveY(376f, 1.2f).setEaseInElastic();
+        Lojinha.LeanMoveX(671f,1.2f).setEaseInElastic();
+        Cam.LeanMoveX(-2.43f,1f);
+    }
+
+    public void Fechar_Loja()
+    {
+       TemaPrincipal.LeanMoveLocalY(0f, 1.2f).setEaseInElastic();
+       Lojinha.LeanMoveX(930f,1.2f).setEaseInElastic();
+       Cam.LeanMoveX(0.1f,1f);
     }
 }

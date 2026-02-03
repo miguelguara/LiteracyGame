@@ -15,7 +15,17 @@ public class Item_button : MonoBehaviour
 
     void Start()
     {
-        imagemChapeu.sprite = chapeu;
+        //checa se o chapeu já foi comprado e já atualiza o texto do jogo
+         imagemChapeu.sprite = chapeu;
+        if(Comprado)
+        {
+            Atualizar_UI();
+        }
+        else
+        {
+          text.text = custo.ToString();  
+        }
+        
     }
 
     public void Comprar_Chapeu()
@@ -29,9 +39,15 @@ public class Item_button : MonoBehaviour
         }
     }
 
+   //essa função serve pra atualizar a UI no momento que é comprado
     public void Atualizar_UI()
     {
-        if(Comprado) text.text = "Comprado";
+        if(Comprado)
+        { 
+        text.text = "Comprado"; 
+        text.fontSize = 18;
+        text.color = Color.green;
+        }
     }
 
 }
