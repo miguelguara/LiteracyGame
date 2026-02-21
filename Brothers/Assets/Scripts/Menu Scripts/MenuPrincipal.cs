@@ -7,11 +7,12 @@ public class MenuPrincipal : MonoBehaviour
     public Image Logo;
     //Fica responsável por mover a camera
     [SerializeField] private Transform Cam;
-    [SerializeField]
-    private RectTransform Pannel_Levels, Pannel_Numeros,TemaPrincipal,Lojinha;
+    [SerializeField] private RectTransform Pannel_Levels, Pannel_Numeros,TemaPrincipal,Lojinha,maos;
     //Verifica na memoria se o jogo ja foi aberto
-
     private int aberto;
+
+    private bool Lojinha_Aberta;
+
     public void Awake()
     {
         //faz a logo mudar de escala parecendo uma animacao
@@ -29,18 +30,25 @@ public class MenuPrincipal : MonoBehaviour
         }
     }
 
-    void Update()
+    void Start()
     {
-        if(Mouse.current.leftButton.wasPressedThisFrame)
+        Lojinha_Aberta = false;
+    }
+
+    public void Chamar_Loja()
+    {
+        Lojinha_Aberta = !Lojinha_Aberta;
+
+        if (Lojinha_Aberta)
         {
             Abrir_Loja();
         }
-          if(Mouse.current.rightButton.wasPressedThisFrame)
+        else
         {
             Fechar_Loja();
         }
+        
     }
-
 
     public void PannelIN()
     {
@@ -76,6 +84,7 @@ public class MenuPrincipal : MonoBehaviour
         TemaPrincipal.LeanMoveY(376f, 1.2f).setEaseInElastic();
         Lojinha.LeanMoveX(671f,1.2f).setEaseInElastic();
         Cam.LeanMoveX(-2.43f,1f);
+        maos.LeanMoveY(-59f,1f).setEaseInElastic();
     }
 
     public void Fechar_Loja()
@@ -83,5 +92,6 @@ public class MenuPrincipal : MonoBehaviour
        TemaPrincipal.LeanMoveLocalY(0f, 1.2f).setEaseInElastic();
        Lojinha.LeanMoveX(930f,1.2f).setEaseInElastic();
        Cam.LeanMoveX(0.1f,1f);
+       maos.LeanMoveY(-270f,1f).setEaseInElastic();
     }
 }
