@@ -1,16 +1,23 @@
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Save_Roupas : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public void Salvar_Roupas()
     {
         
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Load_Roupas()
     {
         
     }
+
+}
+
+class DadosRoupas
+{
+    public List<string> nomeSprites;
+    public List<bool> itensComprados;    
 }

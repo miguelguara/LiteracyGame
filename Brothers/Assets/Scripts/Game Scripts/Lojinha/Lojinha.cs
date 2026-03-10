@@ -22,7 +22,7 @@ public class Lojinha : MonoBehaviour
     void Start()
     {
         //Pega da memoria a quantidade de moedas que o player possui
-       // moedas = PlayerPrefs.GetInt("Moedas");
+        //moedas = PlayerPrefs.GetInt("Moedas");
         Moedas_txt.text = moedas.ToString();
     }
 
@@ -33,12 +33,5 @@ public class Lojinha : MonoBehaviour
        Moedas_txt.text = moedas.ToString();
        PlayerPrefs.SetInt("Moedas", moedas);
     }
-
-    //Compra as moedas
-    /*public void adicionar(int adicionar)
-    {
-        moedas += adicionar;   
-        Moedas_txt.text = moedas.ToString();     
-    }*/
 
 }
