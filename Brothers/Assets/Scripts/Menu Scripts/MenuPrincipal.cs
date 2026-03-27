@@ -82,7 +82,7 @@ public class MenuPrincipal : MonoBehaviour
     public void Abrir_Loja()
     {
         TemaPrincipal.LeanMoveY(376f, 1.2f).setEaseInElastic();
-        Lojinha.LeanMoveX(671f,1.2f).setEaseInElastic();
+        Lojinha.LeanMoveX(-125f,1.2f).setEaseInElastic();
         Cam.LeanMoveX(-2.43f,1f);
         maos.LeanMoveY(-59f,1f).setEaseInElastic();
     }
@@ -90,7 +90,7 @@ public class MenuPrincipal : MonoBehaviour
     public void Fechar_Loja()
     {
        TemaPrincipal.LeanMoveY(0f, 1.2f).setEaseInElastic();
-       Lojinha.LeanMoveX(930f,1.2f).setEaseInElastic();
+       Lojinha.LeanMoveX(138f,1.2f).setEaseInElastic();
        Cam.LeanMoveX(0.1f,1f);
        maos.LeanMoveY(-270f,1f).setEaseInElastic();
     }
