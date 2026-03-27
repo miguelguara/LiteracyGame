@@ -17,12 +17,15 @@ public class Lojinha : MonoBehaviour
     void Awake()
     {
         Instance = this;
+        if(!PlayerPrefs.HasKey("Moedas"))
+        {
+            PlayerPrefs.SetInt("Moedas", 0);
+        }
     }
 
     void Start()
     {
-        //Pega da memoria a quantidade de moedas que o player possui
-        //moedas = PlayerPrefs.GetInt("Moedas");
+        moedas = PlayerPrefs.GetInt("Moedas");
         Moedas_txt.text = moedas.ToString();
     }
 

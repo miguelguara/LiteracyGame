@@ -30,10 +30,31 @@ public class Parabens : MonoBehaviour
     {
         //Ele preenche as estrelas do painel de parabens!!!
         int star = CronometroTimer.instance.Pontuacao();
+        AddMoedas(star);
         for (int i = 0; i < star; i++)
         {
            stars[i].SetActive(true);
            stars[i].LeanScale(new Vector3(1.2f, 1.2f),0.78f).setLoopPingPong();
+        }
+    }
+
+    public void AddMoedas(int star)
+    {
+        int moedasAtuais = PlayerPrefs.GetInt("Moedas");
+        switch (star)
+        {
+            case 1:
+            moedasAtuais += 10;
+            PlayerPrefs.SetInt("Moedas", moedasAtuais);
+            break;
+            case 2:
+            moedasAtuais += 20;
+            PlayerPrefs.SetInt("Moedas", moedasAtuais);
+            break;
+            case 3:
+            moedasAtuais += 30;
+            PlayerPrefs.SetInt("Moedas", moedasAtuais);
+            break;
         }
     }
 }
