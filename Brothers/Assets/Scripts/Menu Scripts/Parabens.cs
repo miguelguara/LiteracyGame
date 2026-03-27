@@ -44,15 +44,15 @@ public class Parabens : MonoBehaviour
         switch (star)
         {
             case 1:
-            moedasAtuais += 10;
+            moedasAtuais += 100;
             PlayerPrefs.SetInt("Moedas", moedasAtuais);
             break;
             case 2:
-            moedasAtuais += 20;
+            moedasAtuais += 200;
             PlayerPrefs.SetInt("Moedas", moedasAtuais);
             break;
             case 3:
-            moedasAtuais += 30;
+            moedasAtuais += 300;
             PlayerPrefs.SetInt("Moedas", moedasAtuais);
             break;
         }

@@ -89,7 +89,7 @@ public class MenuPrincipal : MonoBehaviour
 
     public void Fechar_Loja()
     {
-       TemaPrincipal.LeanMoveLocalY(0f, 1.2f).setEaseInElastic();
+       TemaPrincipal.LeanMoveY(0f, 1.2f).setEaseInElastic();
        Lojinha.LeanMoveX(930f,1.2f).setEaseInElastic();
        Cam.LeanMoveX(0.1f,1f);
        maos.LeanMoveY(-270f,1f).setEaseInElastic();

@@ -25,11 +25,6 @@ public class Number_Manager : MonoBehaviour
     //Serve para pausar o Timer!
     [HideInInspector]
     public bool finalizado;
-
-    public void Adicionar(int n) 
-    {
-        Conter += n;
-    }
     void Awake()
     {
         instance = this;
@@ -57,7 +52,7 @@ public class Number_Manager : MonoBehaviour
 
     public void Prox_Num()
     {
-        if (Conter < limit)
+        if (Conter < limit-1)
         {
             float x = Random.Range(-9f, 9f);
             float y = Random.Range(-4f, 3f);
