@@ -36,6 +36,7 @@ public class Parabens : MonoBehaviour
            stars[i].SetActive(true);
            stars[i].LeanScale(new Vector3(1.2f, 1.2f),0.78f).setLoopPingPong();
         }
+
     }
 
     public void AddMoedas(int star)

@@ -110,7 +110,7 @@ public class Word_manager : MonoBehaviour
         if (Correto)
         {
             //desce o painel de vitoria e preenche os campos das estrelas
-            Vitoria_Panel.LeanMoveY(50f, 0.5f);
+            Vitoria_Panel.LeanMoveY(-193f, 0.5f);
             Parabens.instance.PreencherStar();
             
             //pega a pontuação atual que o aluno tirou e passa para uma variavel int
