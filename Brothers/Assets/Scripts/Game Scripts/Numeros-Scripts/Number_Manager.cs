@@ -93,7 +93,7 @@ public class Number_Manager : MonoBehaviour
           Atribuidor_Points.instance.pontos(p);
           yield return new WaitForSeconds(0.36f); 
           AudioControl.instance.Tocar_SFX(Yay);
-          Vitoria_Panel.LeanMoveY(50f, 0.5f);   
+          Vitoria_Panel.LeanMoveY(-193f, 0.5f);   
     }
 
 }
