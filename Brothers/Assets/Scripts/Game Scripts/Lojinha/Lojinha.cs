@@ -10,7 +10,7 @@ public class Lojinha : MonoBehaviour
     [SerializeField] private TextMeshProUGUI Moedas_txt;
 
     //Serve para atualizar os itens da loja
-    public Item_button[] roupas;
+    public List<Item_button> roupasButtons;
 
     public static Lojinha Instance;
 
@@ -21,6 +21,7 @@ public class Lojinha : MonoBehaviour
         {
             PlayerPrefs.SetInt("Moedas", 0);
         }
+        Save_Roupas.instance.Load_Roupas();
     }
 
     void Start()

@@ -13,7 +13,14 @@ public class Selecao_Roupa : MonoBehaviour
 
     void Awake()
     {
+        if (instance == null)
         instance = this;
+    }
+
+    void Start()
+    {
+        index = PlayerPrefs.GetInt("chapeu_Atual");
+        chapeu_utilizado.sprite = chapeus[index];
     }
 
     //função para adicionar chapeus a lista
@@ -31,6 +38,7 @@ public class Selecao_Roupa : MonoBehaviour
             index = 0;  
         }
         chapeu_utilizado.sprite = chapeus[index];
+        PlayerPrefs.SetInt("chapeu_Atual",index);
     }
     public void Ant_Chapel()
     {
@@ -40,6 +48,7 @@ public class Selecao_Roupa : MonoBehaviour
             index = chapeus.Count -1;  
         }
         chapeu_utilizado.sprite = chapeus[index]; 
+        PlayerPrefs.SetInt("chapeu_Atual",index);
     }
 
 }

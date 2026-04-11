@@ -32,10 +32,12 @@ public class Item_button : MonoBehaviour
     {
         if(Lojinha.Instance.moedas >= custo && Comprado == false)
         {
+            //Realiza a cobrança do preço do chapeu e o adiciona a lista de itens
             Lojinha.Instance.Comprar(custo);
             Selecao_Roupa.instance.Adicionar_Roupa(chapeu);
             Comprado = true;
             Atualizar_UI();
+            Save_Roupas.instance.Salvar_Roupas();
         }
     }
 
