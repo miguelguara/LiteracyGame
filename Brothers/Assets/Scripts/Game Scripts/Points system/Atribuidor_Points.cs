@@ -11,7 +11,6 @@ public class Atribuidor_Points : MonoBehaviour
 
 // Vai procurar os botõesF
   private Botao_Fase[] btsF;
-
   private Botao_Numero[] btsN;
   private int pontuacao;
   public static Atribuidor_Points instance;
@@ -38,11 +37,7 @@ public class Atribuidor_Points : MonoBehaviour
     }
     void Start()
     {
-        //Encontra o transform do objeto pai dos botões
-        btsTrasnform = GameObject.Find("Content_Letras").transform;
-        btsNTransform = GameObject.Find("Content_Num").transform;
-        btsF = btsTrasnform.GetComponentsInChildren<Botao_Fase>();
-        btsN = btsNTransform.GetComponentsInChildren<Botao_Numero>();
+        GetComponentInChildrenbyTransform();
         Load();
     }
 
@@ -51,10 +46,7 @@ public class Atribuidor_Points : MonoBehaviour
         
         if (cena.name == "Menu")
         {
-            btsTrasnform = GameObject.Find("Content_Letras").transform;
-            btsNTransform = GameObject.Find("Content_Num").transform;
-            btsF = btsTrasnform.GetComponentsInChildren<Botao_Fase>();
-            btsN = btsNTransform.GetComponentsInChildren<Botao_Numero>();
+            GetComponentInChildrenbyTransform();
             Load();
 
 
@@ -98,7 +90,7 @@ public class Atribuidor_Points : MonoBehaviour
     }
 
     //Regioes responsáveis por salvar os pontos do jogo:
-    public void Save()
+public void Save()
     {
         //instancia o objeto que será trasformado em Json
         PontosSalvos p = new PontosSalvos();
@@ -120,8 +112,6 @@ public class Atribuidor_Points : MonoBehaviour
 
     Debug.Log("Salvo em: " + path);  
     }
-
-
 
 public void Load()
 {
@@ -149,6 +139,15 @@ public void Load()
     }
 
 }
+
+  //Encontra o transform do objeto pai dos botões
+public void GetComponentInChildrenbyTransform()
+    {
+        btsTrasnform = GameObject.Find("Content_Letras").transform;
+        btsNTransform = GameObject.Find("Content_Num").transform;
+        btsF = btsTrasnform.GetComponentsInChildren<Botao_Fase>();
+        btsN = btsNTransform.GetComponentsInChildren<Botao_Numero>(); 
+    }
 
 }
 //classe de dados que será transformada em arquivo Json

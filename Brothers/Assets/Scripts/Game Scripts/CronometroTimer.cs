@@ -3,7 +3,7 @@ using TMPro;
 
 public class CronometroTimer : MonoBehaviour
 {
-      [SerializeField]
+    [SerializeField]
     private TextMeshProUGUI TimerTxt;
     private float time;
 
