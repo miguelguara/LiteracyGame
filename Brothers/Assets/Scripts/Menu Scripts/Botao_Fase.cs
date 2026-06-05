@@ -7,9 +7,9 @@ public class Botao_Fase : MonoBehaviour
     public int ID;
 
     [SerializeField]
-    private string Palavra;
+    public string Palavra;
     [SerializeField]
-    private int Numero_imagem;
+    public int Numero_imagem;
     [SerializeField]
     private GameObject[] estrelas;
 

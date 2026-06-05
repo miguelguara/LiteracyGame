@@ -15,6 +15,7 @@ public class Parabens : MonoBehaviour
     {
         instance = this;
     }
+
     public void Reload() 
     {
         FaseIndex = SceneManager.GetActiveScene().buildIndex;
@@ -30,6 +31,7 @@ public class Parabens : MonoBehaviour
     {
         //Ele preenche as estrelas do painel de parabens!!!
         int star = CronometroTimer.instance.Pontuacao();
+        Atribuidor_Points.instance.pontos(star);
         AddMoedas(star);
         for (int i = 0; i < star; i++)
         {
@@ -37,6 +39,11 @@ public class Parabens : MonoBehaviour
            stars[i].LeanScale(new Vector3(1.2f, 1.2f),0.78f).setLoopPingPong();
         }
 
+    }
+
+    public void Prox_fase()
+    {
+        PlayerPrefs.SetInt("IndexLetra", 1);
     }
 
     public void AddMoedas(int star)

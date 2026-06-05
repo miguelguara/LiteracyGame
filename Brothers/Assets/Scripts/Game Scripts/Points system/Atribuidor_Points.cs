@@ -6,8 +6,7 @@ using UnityEngine.SceneManagement;
 public class Atribuidor_Points : MonoBehaviour
 {
 //Esses ints recebem o ID dos botões para atribuir seus pontos no MENU
-[SerializeField]
-  private int ID_botaoF,ID_botaoN;
+  public int ID_botaoF,ID_botaoN;
 
 // Vai procurar os botõesF
   private Botao_Fase[] btsF;
@@ -16,10 +15,11 @@ public class Atribuidor_Points : MonoBehaviour
   public static Atribuidor_Points instance;
 
   //Transform responsável por agrupar o botões
-  [SerializeField]
   private Transform btsTrasnform;
-  [SerializeField]
   private Transform btsNTransform;
+
+ //Ficará responsável por mudar para a prox Fase
+  public Dados_fases dados_Fases = new Dados_fases();
 
     void Awake()
     {
@@ -38,6 +38,7 @@ public class Atribuidor_Points : MonoBehaviour
     void Start()
     {
         GetComponentInChildrenbyTransform();
+        Atribuicao_Dados_Fases();
         Load();
     }
 
@@ -81,12 +82,14 @@ public class Atribuidor_Points : MonoBehaviour
     //passa os vaores para as variáveis dos botoes
     public void SelectedButtonF(int b)
     {
-        ID_botaoF = b;        
+        ID_botaoF = b;
+        PlayerPrefs.SetInt("indexFase",ID_botaoF);        
     }
 
      public void SelectedButtonN(int b)
     {
-        ID_botaoN = b;        
+        ID_botaoN = b; 
+        PlayerPrefs.SetInt("indexFase",ID_botaoN);        
     }
 
     //Regioes responsáveis por salvar os pontos do jogo:
@@ -147,6 +150,18 @@ public void GetComponentInChildrenbyTransform()
         btsNTransform = GameObject.Find("Content_Num").transform;
         btsF = btsTrasnform.GetComponentsInChildren<Botao_Fase>();
         btsN = btsNTransform.GetComponentsInChildren<Botao_Numero>(); 
+    }
+
+public void Atribuicao_Dados_Fases()
+    {
+        for(int i = 0;i< btsF.Length; i++)
+        {
+            dados_Fases.fasePalavras.Add(new FasePalavra(btsF[i].ID,btsF[i].Numero_imagem,btsF[i].Palavra,btsF[i].pontosAtual));
+        }
+        for(int j = 0;j< btsN.Length; j++)
+        {
+            dados_Fases.faseNumeros.Add(new FaseNumero(btsN[j].ID,btsN[j].Numero_Inicial,btsN[j].Numero_Final,btsN[j].pontosAtual));
+        }
     }
 
 }

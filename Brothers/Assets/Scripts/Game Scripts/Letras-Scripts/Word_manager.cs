@@ -112,10 +112,6 @@ public class Word_manager : MonoBehaviour
             //desce o painel de vitoria e preenche os campos das estrelas
             Vitoria_Panel.LeanMoveY(-193f, 0.5f);
             Parabens.instance.PreencherStar();
-            
-            //pega a pontuação atual que o aluno tirou e passa para uma variavel int
-            int p = CronometroTimer.instance.Pontuacao();
-            Atribuidor_Points.instance.pontos(p);
 
             //desativa os botoes de verificação e retorno;
             AudioControl.instance.Tocar_SFX(Yay);

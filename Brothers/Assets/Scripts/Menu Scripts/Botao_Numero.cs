@@ -5,7 +5,7 @@ public class Botao_Numero : MonoBehaviour
     [Header("Id para atribuir o numero")]
     public int ID;
     [SerializeField]
-    private int Numero_Inicial, Numero_Final;
+    public int Numero_Inicial, Numero_Final;
 
     public int pontosAtual;
 
